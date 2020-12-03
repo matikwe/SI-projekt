@@ -4,7 +4,7 @@ session_start();
 
 define('_ROOT_PATH', dirname(__FILE__));
 
-$actions = array('start'); //wpisywać stworzone podstrony
+$actions = array('start','login','registration'); //wpisywać stworzone podstrony
 $action = 'start'; //zaczyna od...
 
 if(array_key_exists('action', $_GET))

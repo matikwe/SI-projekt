@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #232323;
+}
+.login {
+    background-color: #232323;
+    background-size: cover;
+    border-radius: 3px;
+    text-align: center;
+}
+.login .form {
+    padding: 15px 20px;
+}
+.login .form h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 500%;
+    padding-bottom: 3%;
+    font-weight: bold;
+}
+.login .form input {
+    width: 40%;
+
+    height: 40px;
+    margin-top: 20px;
+    background: rgba(255,255,255,.5);
+    border: 1px solid rgba(255,255,255,.1);
+    padding: 0 15px;
+    color: #FFF;
+    border-radius: 15px;
+    font-size: 14px;
+    display: block;
+    margin-left: 30%;
+}
+
+.login .form input:focus {
+    border: 1px solid rgba(255,255,255,.8);
+    outline: none;
+}
+::-webkit-input-placeholder {
+    color: #DDD;
+}
+.login .form input.submit {
+    background: rgba(255,255,255,.9);
+    color: #444;
+    font-size: 15px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+.login .form input.submit:hover {
+    background-color: darkgrey; /*zmiana koloru*/
+}
