@@ -1,6 +1,6 @@
 <html lang="pl-PL">
     <head>
-        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="./style/style.css">
         <title>Login</title>
     </head>
     <body>
@@ -17,4 +17,5 @@
             </div>
         </div>
     </body>
+
 </html>

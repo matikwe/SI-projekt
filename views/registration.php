@@ -1,6 +1,6 @@
 <html lang="pl-PL">
 <head>
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Rejestracja</title>
 </head>
 <body>
