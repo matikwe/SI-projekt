@@ -55,3 +55,136 @@ body{
 .login .form input.submit:hover {
     background-color: darkgrey; /*zmiana koloru*/
 }
+.home {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #232323;
+
+
+}
+.home .logo{
+    background-color: #232323;
+    padding: 25px;
+    float: left;
+    width: 120px;
+    min-height: 80px;
+    text-align: left;
+
+
+}
+.home .menu{
+    float: left;
+    background-color: #232323;
+    padding: 25px;
+    width: 700px;
+    align-content: center;
+    text-align: center;
+}
+.home .search{
+    float: left;
+    align-content: center;
+    background-color: #232323;
+    width: 120px;
+    min-height: 50px;
+    padding: 25px;
+    text-align: right;
+}
+.home .ad1{
+    clear: both;
+    float: left;
+    background-color: #232323;
+    width: 70px;
+    min-height: 50px;
+    padding: 10px;
+    text-align: left;
+
+}
+.home .articles {
+    float: left;
+    width: 700px;
+}
+
+.home .a1{
+    min-height: 200px;
+    float: left;
+    width: 350px;
+    text-align: center;
+}
+.home .a2{
+    min-height: 200px;
+    float: left;
+    width: 350px;
+    text-align: center;
+}
+.home .a3{
+    min-height: 200px;
+    clear: both;
+    float: left;
+    width: 350px;
+    text-align: center;
+
+}
+.home .a4{
+    min-height: 200px;
+    float: left;
+    width: 350px;
+    text-align: center;
+
+}
+.home .a5{
+    min-height: 200px;
+    clear: both;
+    float: left;
+    width: 350px;
+    text-align: center;
+
+}
+.home .a6{
+    min-height: 200px;
+    float: left;
+    width: 350px;
+    text-align: center;
+}
+.home .numbering{
+    text-align: center;
+    padding: 15px;
+}
+.home .ad2{
+    float: left;
+    background-color: #232323;
+    width: 70px;
+    min-height: 50px;
+    padding: 10px;
+}
+.home .user{
+    width: 120px;
+    max-height: 120px;
+    text-align: center;
+
+}
+.home .ad{
+    width: 120px;
+    max-height: 400px;
+    text-align: center;
+
+}
+.home .widgets{
+    width: 120px;
+    max-height: 120px;
+    text-align: center;
+
+}
+.home .contact{
+    clear: both;
+    float: left;
+    width: 500px;
+    text-align:left;
+    padding: 15px;
+}
+.home .media{
+    float: left;
+    width: 500px;
+    text-align: right;
+    padding: 15px;
+}
