@@ -56,10 +56,12 @@ body{
     background-color: darkgrey; /*zmiana koloru*/
 }
 .home {
-    width: 1000px;
+
     margin-left: auto;
     margin-right: auto;
     background-color: #232323;
+    background-size: cover;
+    border-radius: 3px;
 
 
 }
@@ -67,7 +69,7 @@ body{
     background-color: #232323;
     padding: 25px;
     float: left;
-    width: 120px;
+    width: 10%;
     min-height: 80px;
     text-align: left;
 
@@ -77,114 +79,153 @@ body{
     float: left;
     background-color: #232323;
     padding: 25px;
-    width: 700px;
+    width: 80%;
     align-content: center;
     text-align: center;
+}
+
+.home .info{
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+}
+.home .chat{
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+}
+.home .contact1{
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+}
+.home .login{
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+}
+.home .articles1{
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
 }
 .home .search{
     float: left;
     align-content: center;
     background-color: #232323;
-    width: 120px;
+    width: 10%;
     min-height: 50px;
     padding: 25px;
     text-align: right;
+    font-weight: bold;
 }
 .home .ad1{
     clear: both;
     float: left;
     background-color: #232323;
-    width: 70px;
-    min-height: 50px;
+    width: 20%;
+    min-height: 60%;
     padding: 10px;
     text-align: left;
 
 }
 .home .articles {
     float: left;
-    width: 700px;
+    width: 60%;
 }
 
 .home .a1{
-    min-height: 200px;
+
     float: left;
-    width: 350px;
+    width: 50%;
     text-align: center;
+    min-height: 34%;
 }
 .home .a2{
-    min-height: 200px;
+
     float: left;
-    width: 350px;
+    width: 50%;
     text-align: center;
+    min-height: 34%;
 }
 .home .a3{
-    min-height: 200px;
+
     clear: both;
     float: left;
-    width: 350px;
+    width: 50%;
     text-align: center;
+    min-height: 33%;
 
 }
 .home .a4{
-    min-height: 200px;
+
     float: left;
-    width: 350px;
+    width: 50%;
     text-align: center;
+    min-height: 33%;
 
 }
 .home .a5{
-    min-height: 200px;
+
     clear: both;
     float: left;
-    width: 350px;
+    width: 50%;
+    min-height: 33%;
     text-align: center;
 
 }
 .home .a6{
-    min-height: 200px;
+
     float: left;
-    width: 350px;
+    width: 50%;
     text-align: center;
+    min-height: 33%;
 }
 .home .numbering{
     text-align: center;
     padding: 15px;
+    width: 100%;
 }
 .home .ad2{
     float: left;
     background-color: #232323;
-    width: 70px;
+    width: 20%;
     min-height: 50px;
     padding: 10px;
 }
 .home .user{
-    width: 120px;
-    max-height: 120px;
-    text-align: center;
+    width: 20%;
+    max-height: 15%;
+    text-align: right;
 
 }
 .home .ad{
-    width: 120px;
-    max-height: 400px;
-    text-align: center;
+    width: 20%;
+    max-height: 70%;
+    text-align: right;
 
 }
 .home .widgets{
-    width: 120px;
-    max-height: 120px;
-    text-align: center;
+    width: 20%;
+    max-height: 70%;
+    text-align: right;
 
 }
 .home .contact{
     clear: both;
     float: left;
-    width: 500px;
-    text-align:left;
+    width: 50%;
+    text-align:center;
     padding: 15px;
 }
 .home .media{
     float: left;
-    width: 500px;
-    text-align: right;
+    width: 50%;
+    text-align: center;
     padding: 15px;
 }

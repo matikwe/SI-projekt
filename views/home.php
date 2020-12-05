@@ -9,35 +9,50 @@
     <body>
         <div class="home">
             <div class="logo">
-                <a href="index.php?action=login">Login</a>
+                logo
             </div>
             <div class="menu">
-                menu
+                <div class="info">
+                    ABOUT US
+                </div>
+                <div class="chat">
+                    CHAT
+                </div>
+                <div class="contact1">
+                    CONTACT
+                </div>
+                <div class="login">
+                    <a href="index.php?action=login">LOGIN</a>
+                </div>
+                <div class="articles1">
+                    ARTICLES
+                </div>
             </div>
             <div class="search">
-                search
+
+                SEARCH
             </div>
             <div class="ad1">
                 ad
             </div>
             <div class="articles">
                 <div class="a1">
-                    a1
+                    article1
                 </div>
                 <div class="a2">
-                    a2
+                    article2
                 </div>
                 <div class="a3">
-                    a3
+                    article3
                 </div>
                 <div class="a4">
-                    a4
+                    article4
                 </div>
                 <div class="a5">
-                    a5
+                    article5
                 </div>
                 <div class="a6">
-                    a6
+                    article6
                 </div>
                 <div class="numbering">
                     page
