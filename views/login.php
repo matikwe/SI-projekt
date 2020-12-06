@@ -11,6 +11,7 @@
                     <label>
                         <input type="text" placeholder="Login">
                         <input type="password" placeholder="Hasło">
+                        <a href="index.php?action=registration" class="info">Nie masz konta? Zarejestruj się...</a>
                         <input type="submit" value="Zaloguj" class="submit">
                     </label>
                 </form>
