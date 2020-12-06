@@ -114,3 +114,9 @@ body{
     text-align: right;
 
 }
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+}
