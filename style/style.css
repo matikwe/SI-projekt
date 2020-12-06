@@ -60,177 +60,98 @@ body{
     text-decoration: none;
     color: #DDDDDD;
 }
-.home {
 
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #232323;
-    background-size: cover;
-    border-radius: 3px;
-
-
-}
-.home .logo{
-    background-color: #232323;
-    padding: 25px;
-    float: left;
-    width: 10%;
-    min-height: 80px;
-    text-align: left;
-
-
-}
-.home .menu{
-    float: left;
-    background-color: #232323;
-    padding: 25px;
-    width: 80%;
-    align-content: center;
-    text-align: center;
-}
-
-.home .info{
-    float: left;
-    width: 20%;
-    text-align: center;
-    font-weight: bold;
-}
-.home .chat{
-    float: left;
-    width: 20%;
-    text-align: center;
-    font-weight: bold;
-}
-.home .contact1{
-    float: left;
-    width: 20%;
-    text-align: center;
-    font-weight: bold;
-}
-.home .login{
-    float: left;
-    width: 20%;
-    text-align: center;
-    font-weight: bold;
-}
-.home .articles1{
-    float: left;
-    width: 20%;
-    text-align: center;
-    font-weight: bold;
-}
-.home .search{
-    float: left;
-    align-content: center;
-    background-color: #232323;
-    width: 10%;
-    min-height: 50px;
-    padding: 25px;
-    text-align: right;
-    font-weight: bold;
-}
-.home .ad1{
-    clear: both;
-    float: left;
-    background-color: #232323;
-    width: 20%;
-    min-height: 60%;
-    padding: 10px;
-    text-align: left;
-
-}
-.home .articles {
-    float: left;
-    width: 60%;
-}
-
-.home .a1{
-
-    float: left;
-    width: 50%;
-    text-align: center;
-    min-height: 34%;
-}
-.home .a2{
-
-    float: left;
-    width: 50%;
-    text-align: center;
-    min-height: 34%;
-}
-.home .a3{
-
-    clear: both;
-    float: left;
-    width: 50%;
-    text-align: center;
-    min-height: 33%;
-
-}
-.home .a4{
-
-    float: left;
-    width: 50%;
-    text-align: center;
-    min-height: 33%;
-
-}
-.home .a5{
-
-    clear: both;
-    float: left;
-    width: 50%;
-    min-height: 33%;
-    text-align: center;
-
-}
-.home .a6{
-
-    float: left;
-    width: 50%;
-    text-align: center;
-    min-height: 33%;
-}
-.home .numbering{
-    text-align: center;
-    padding: 15px;
+.top-bar {
     width: 100%;
 }
-.home .ad2{
+
+.menu{
+    width: 80%;
     float: left;
-    background-color: #232323;
-    width: 20%;
-    min-height: 50px;
-    padding: 10px;
 }
-.home .user{
+.option{
+    float: left;
     width: 20%;
-    max-height: 15%;
-    text-align: right;
+    padding: 20px;
+    text-align: center;
+    opacity: 60%;
+    font-weight: bold;
+    border-radius: 30px;
 
 }
-.home .ad{
-    width: 20%;
-    max-height: 70%;
-    text-align: right;
-
+.option:hover{
+    background-color: cadetblue;
+    cursor: pointer;
 }
-.home .widgets{
-    width: 20%;
-    max-height: 70%;
-    text-align: right;
-
+.logo{
+    float: left;
+    width: 10%;
+    text-align: center;
+    padding: 20px;
 }
-.home .contact{
+.search{
+    float: left;
+    width: 10%;
+    text-align: center;
+    padding: 20px;
+}
+.ad1{
     clear: both;
     float: left;
-    width: 50%;
-    text-align:center;
-    padding: 15px;
-}
-.home .media{
-    float: left;
-    width: 50%;
+    width: 10%;
     text-align: center;
-    padding: 15px;
+}
+.articles{
+    float: left;
+    width: 80%;
+    text-align: center;
+}
+.a1{
+    padding: 20px;
+    float: left;
+    text-align: center;
+    width: 50%;
+    min-height: 30%;
+}
+.a2{
+    padding: 20px;
+    float: left;
+    text-align: center;
+    width: 50%;
+    min-height: 30%;
+}
+.a3{
+    padding: 20px;
+    clear: both;
+    float: left;
+    text-align: center;
+    width: 50%;
+    min-height: 30%;
+}
+.a4{
+    padding: 20px;
+    float: left;
+    text-align: center;
+    width: 50%;
+    min-height: 30%;
+}
+.a5{
+    padding: 20px;
+    clear: both;
+    float: left;
+    text-align: center;
+    width: 50%;
+    min-height: 30%;
+}
+.a6{
+    padding: 20px;
+    float: left;
+    text-align: center;
+    width: 50%;
+    min-height: 30%;
+}
+.ad2{
+    float: left;
+    text-align: right;
+
 }
