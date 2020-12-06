@@ -21,6 +21,7 @@
         <div class="option"><a href="index.php?action=login">LOGOWANIE</a></div>
         <div class="option">ARTYKUŁY</div>
     </div>
+
     <div class="search">
         szukaj
     </div>
