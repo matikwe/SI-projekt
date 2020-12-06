@@ -106,49 +106,8 @@ body{
     width: 80%;
     text-align: center;
 }
-.a1{
-    padding: 20px;
-    float: left;
-    text-align: center;
-    width: 50%;
-    min-height: 30%;
-}
-.a2{
-    padding: 20px;
-    float: left;
-    text-align: center;
-    width: 50%;
-    min-height: 30%;
-}
-.a3{
-    padding: 20px;
-    clear: both;
-    float: left;
-    text-align: center;
-    width: 50%;
-    min-height: 30%;
-}
-.a4{
-    padding: 20px;
-    float: left;
-    text-align: center;
-    width: 50%;
-    min-height: 30%;
-}
-.a5{
-    padding: 20px;
-    clear: both;
-    float: left;
-    text-align: center;
-    width: 50%;
-    min-height: 30%;
-}
-.a6{
-    padding: 20px;
-    float: left;
-    text-align: center;
-    width: 50%;
-    min-height: 30%;
+.article{
+
 }
 .ad2{
     float: left;

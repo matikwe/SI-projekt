@@ -14,24 +14,12 @@
             Reklama
         </div>
         <div class="articles">
-            <div class="a1">
-                A
-            </div>
-            <div class="a2">
-                A
-            </div>
-            <div class="a3">
-                A
-            </div>
-            <div class="a4">
-                A
-            </div>
-            <div class="a5">
-                A
-            </div>
-            <div class="a6">
-                A
-            </div>
+            <div class="article">A1</div>
+            <div class="article">A2</div>
+            <div class="article">A3</div>
+            <div class="article">A4</div>
+            <div class="article">A5</div>
+            <div class="article">A6</div>
             <div class="numbering">
                 PAGE
             </div>
