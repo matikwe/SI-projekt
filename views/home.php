@@ -13,24 +13,23 @@
             </div>
             <div class="menu">
                 <div class="info">
-                    ABOUT US
+                    O NAS
                 </div>
                 <div class="chat">
-                    CHAT
+                    CZAT
                 </div>
                 <div class="contact1">
-                    CONTACT
+                    KONTAKT
                 </div>
                 <div class="login">
                     <a href="index.php?action=login">LOGIN</a>
                 </div>
                 <div class="articles1">
-                    ARTICLES
+                    ARTYKUŁY
                 </div>
             </div>
             <div class="search">
-
-                SEARCH
+                SZUKAJ
             </div>
             <div class="ad1">
                 ad
