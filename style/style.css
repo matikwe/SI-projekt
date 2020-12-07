@@ -252,6 +252,7 @@ div.iconabout {
     float: left;
     height: 100%;
     width: 25%;
+    margin: auto;
     display: table-cell;
     box-sizing: border-box;
 }
@@ -260,10 +261,10 @@ div.infoabout {
     float: right;
     height: 100%;
     width: 75%;
+    margin: auto;
     display: table-cell;
     box-sizing: border-box;
 }
-
 
 p.about {
     text-align: justify;
