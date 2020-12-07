@@ -230,12 +230,12 @@ div.contentabout {
 div.headerabout {
     padding: 20px;
     height: 280px;
-    line-height: 140px;
+    line-height: 250px;
     background: #232323;
     text-align: center;
     color: #FFF;
     font-weight: bold;
-    font-size: 500%;
+    font-size: 50px;
 }
 
 div.userabout {
