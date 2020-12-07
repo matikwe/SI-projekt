@@ -109,36 +109,41 @@ body{
     background-color: #111111;
     cursor: pointer;
 }
+
 .logo {
     float: left;
     width: 10%;
     text-align: center;
     padding: 20px;
 }
+
 .search {
     float: left;
     width: 10%;
     text-align: center;
     padding: 20px;
 }
+
 .ad1 {
     clear: both;
     float: left;
     width: 10%;
     text-align: center;
 }
+
 .articles {
     float: left;
     width: 80%;
     text-align: center;
 }
-.article{
+
+.article {
 
 }
+
 .ad2 {
     float: left;
     text-align: right;
-
 }
 
 footer {
@@ -201,6 +206,7 @@ option a {
     align-content: center;
     text-align: center;
     color: #FFFFFF;
+
 }
 
 .pageNF a {
