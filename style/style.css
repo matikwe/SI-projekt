@@ -139,7 +139,6 @@ footer {
 
 footer a {
     float: right;
-    text-decoration: none;
     color: white;
     padding: 10px;
 }
@@ -157,16 +156,28 @@ a:visited {
 }
 
 .facebook {
-    background-color: blue;
+    background-color: #0000CC;
+}
+
+.facebook:hover {
+    background-color: #3333CC;
 }
 
 .instagram {
-    background-color: pink;
+    background-color: #ff9999;
+}
+
+.instagram:hover {
+    background-color: #FFBBBB;
 }
 
 .twitter {
-    background-color: aqua;
+    background-color: #55FFFF;
     align-content: center;
+}
+
+.twitter:hover {
+    background-color: #99FFFF;
 }
 
 option a {
@@ -176,3 +187,4 @@ option a {
 .pageNF {
     height: 800px;
 }
+
