@@ -200,3 +200,60 @@ option a {
     height: 800px;
 }
 
+div.contentabout {
+    margin: auto;
+    width: 50%;
+    background: #444444;
+}
+
+div.headerabout {
+    padding: 20px;
+    height: 280px;
+    line-height: 140px;
+    background: #232323;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 500%;
+}
+
+div.userabout {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 15px solid #232323;
+    border-collapse: collapse;
+    margin: auto;
+    padding: 20px;
+}
+
+div.iconabout {
+    float: left;
+    height: 100%;
+    width: 25%;
+    display: table-cell;
+    box-sizing: border-box;
+}
+
+div.infoabout {
+    float: right;
+    height: 100%;
+    width: 75%;
+    display: table-cell;
+    box-sizing: border-box;
+}
+
+
+p.about {
+    text-align: justify;
+    margin: auto;
+    padding-right: 30px;
+    color: white;
+}
+
+img.iconabout {
+    width: 200px;
+    height: 200px;
+    flex: none;
+    margin-right: 10px;
+}

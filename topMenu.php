@@ -16,7 +16,7 @@
     </div>
     <div class="menu">
 
-        <div class="option">O NAS</div>
+        <a href="index.php?action=about"><div class="option">O NAS</div></a>
         <a href="index.php?action=chat"><div class="option">CZAT</div></a>
         <a href="index.php?action=contact"><div class="option">KONTAKT</div></a>
         <a href="index.php?action=login"><div class="option">LOGOWANIE</div></a>
