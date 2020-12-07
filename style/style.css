@@ -2,21 +2,25 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 body{
     margin: 0;
     padding: 0;
     background-color: #232323;
 }
+
 .login {
     background-color: #232323;
     background-size: cover;
     border-radius: 3px;
     text-align: center;
 }
+
 .login .form {
     padding: 15px 20px;
     height: 87%;
 }
+
 .login .form h2 {
     color: #FFF;
     text-align: center;
@@ -24,6 +28,7 @@ body{
     padding-bottom: 3%;
     font-weight: bold;
 }
+
 .login .form input {
     width: 40%;
 
@@ -44,9 +49,11 @@ body{
     border: 1px solid rgba(255,255,255,.8);
     outline: none;
 }
+
 ::-webkit-input-placeholder {
     color: #DDD;
 }
+
 .login .form input.submit {
     background: rgba(255,255,255,.9);
     color: #444;
@@ -54,9 +61,11 @@ body{
     margin-top: 40px;
     font-weight: bold;
 }
+
 .login .form input.submit:hover {
     background-color: darkgrey; /*zmiana koloru*/
 }
+
 .info {
     text-decoration: none;
     color: #DDDDDD;
@@ -83,7 +92,6 @@ body{
     width: 20%;
     padding: 20px;
     text-align: center;
-    opacity: 60%;
     font-weight: bold;
     border-radius: 30px;
     text-decoration: none;
