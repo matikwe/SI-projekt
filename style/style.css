@@ -71,6 +71,10 @@ body{
     color: #DDDDDD;
 }
 
+.info:hover {
+    text-decoration: underline;
+}
+
 .top-bar {
     width: 100%;
 }
@@ -93,7 +97,7 @@ body{
     padding: 20px;
     text-align: center;
     font-weight: bold;
-    border-radius: 30px;
+    border-radius: 0px;
     text-decoration: none;
 }
 
@@ -102,7 +106,7 @@ body{
 }
 
 .option:hover {
-    background-color: cadetblue;
+    background-color: #111111;
     cursor: pointer;
 }
 .logo {
