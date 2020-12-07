@@ -2,10 +2,11 @@
 ?>
 
 <footer>
-    &#9400; Sekcja 3 Politechnika Śląska <a href="www.facebook.com">FACEBOOK</a>
-    <a href="instagram.com">INSTAGRAM</a>
-    <a href="twitter.com">TWITTER</a>
-    <i class="icon-instagram"></i>
+    &#9400; Sekcja 3 Politechnika Śląska
+    <a href="http://www.facebook.com" class="facebook"><i class="icon-facebook-official"></i></a>
+    <a href="http://www.instagram.com" class="instagram"><i class="icon-instagram"></i></a>
+    <a href="http://www.twitter.com" class="twitter"><i class="icon-twitter"></i></a>
+
 </footer>
 
 </body>
