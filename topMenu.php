@@ -17,10 +17,10 @@
     <div class="menu">
 
         <div class="option">O NAS</div>
-        <div class="option">CZAT</div>
-        <div class="option">KONTAKT</div>
-        <div class="option"><a href="index.php?action=login">LOGOWANIE</a></div>
-        <div class="option">ARTYKUŁY</div>
+        <a href="index.php?action=chat"><div class="option">CZAT</div></a>
+        <a href="index.php?action=contact"><div class="option">KONTAKT</div></a>
+        <a href="index.php?action=login"><div class="option">LOGOWANIE</div></a>
+        <a href="index.php?action=articles"><div class="option">ARTYKUŁY</div></a>
     </div>
 
     <div class="search">

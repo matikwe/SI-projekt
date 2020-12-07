@@ -72,6 +72,12 @@ body{
     background-color: black;
     color: white;
 }
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
 .option {
     float: left;
     width: 20%;
@@ -80,7 +86,13 @@ body{
     opacity: 60%;
     font-weight: bold;
     border-radius: 30px;
+    text-decoration: none;
 }
+
+.option a {
+    color:white;
+}
+
 .option:hover {
     background-color: cadetblue;
     cursor: pointer;
@@ -129,15 +141,18 @@ footer a {
     float: right;
     text-decoration: none;
     color: white;
-
     padding: 10px;
 }
 
-footer a:hover {
+a:hover {
     text-decoration: none;
 }
 
-footer a:link {
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
     text-decoration: none;
 }
 
@@ -152,5 +167,12 @@ footer a:link {
 .twitter {
     background-color: aqua;
     align-content: center;
+}
 
+option a {
+    text-decoration: none;
+}
+
+.pageNF {
+    height: 800px;
 }
