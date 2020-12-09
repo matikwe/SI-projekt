@@ -1,2 +1,2 @@
 # SI-projekt
-Testowy
+Baza o nazwie blog.sql
