@@ -1,9 +1,13 @@
 <html lang="pl-PL">
     <head>
         <link rel="stylesheet" href="./style/style.css">
-        <title>Login</title>
+        <link rel="stylesheet" href="./style/fontello.css">
+        <title>Logowanie</title>
     </head>
     <body>
+    <?php
+    include 'topMenu.php';
+    ?>
         <div class="login">
             <div class="form">
                 <h2>Login</h2>
@@ -26,5 +30,3 @@
                 </form>
             </div>
         </div>
-    </body>
-</html>

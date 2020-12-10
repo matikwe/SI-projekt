@@ -1,15 +1,3 @@
-<?php
-?>
-
-<html lang="pl-PL">
-<head>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/fontello.css">
-    <title>Home</title>
-
-</head>
-
-<body>
 <div class="top-bar">
     <div class="logo">
         logo
@@ -33,5 +21,3 @@
         szukaj
     </div>
 </div>
-</body>
-</html>

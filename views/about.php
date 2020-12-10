@@ -2,17 +2,14 @@
 <html lang="pl-PL">
 <head>
     <meta charset="utf-8">
-    <title>Blog muzyczny - O nas</title>
+    <title>O nas</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/fontello.css">
 </head>
 <body>
-
 <?php
-
+include 'topMenu.php';
 ?>
-
-
-
 <div class="contentabout">
 
     <div class="headerabout">
@@ -76,10 +73,3 @@
     </div>
 
 </div>
-
-
-
-
-</body>
-</html>
-

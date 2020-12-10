@@ -1,9 +1,13 @@
 <html lang="pl-PL">
 <head>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/fontello.css">
     <title>Rejestracja</title>
 </head>
 <body>
+<?php
+include 'topMenu.php';
+?>
     <div class="login">
         <div class="form">
             <h2>Rejestracja</h2>
@@ -40,5 +44,3 @@
             </form>
         </div>
     </div>
-</body>
-</html>

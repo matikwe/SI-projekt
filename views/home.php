@@ -1,15 +1,13 @@
-<?php
-
-
-?>
-
 <html lang="pl-PL">
     <head>
         <link rel="stylesheet" href="./style/style.css">
         <link rel="stylesheet" href="./style/fontello.css">
-        <title>Home</title>
+        <title>Strona główna</title>
     </head>
     <body>
+    <?php
+    include 'topMenu.php';
+    ?>
     <div class="home">
         <div class="ad1">
             Reklama
@@ -37,13 +35,4 @@
             </div>
 
         </div>
-
-
-
-
-
-
-
-
-
     </div>

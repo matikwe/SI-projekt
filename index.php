@@ -4,7 +4,7 @@ session_start();
 
 define('_ROOT_PATH', dirname(__FILE__));
 
-$actions = array('logout','login','registration', 'home', 'about'); //wpisywać stworzone podstrony
+$actions = array('logout', 'login', 'registration', 'home', 'about'); //wpisywać stworzone podstrony
 $action = 'home'; //zaczyna od...
 
 if(array_key_exists('action', $_GET))
@@ -19,7 +19,7 @@ if(array_key_exists('action', $_GET))
     }
 }
 
-include 'topMenu.php';
+//include 'topMenu.php';
 
 include(_ROOT_PATH.DIRECTORY_SEPARATOR.'actions'.DIRECTORY_SEPARATOR.$action.'.php');
 include(_ROOT_PATH.DIRECTORY_SEPARATOR.'views'.DIRECTORY_SEPARATOR.$action.'.php');

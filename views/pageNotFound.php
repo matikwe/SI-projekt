@@ -1,10 +1,27 @@
+<html lang="pl-PL">
+<head>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/fontello.css">
+    <title>Strony nie znaleziono!</title>
+</head>
+<body>
 <?php
+include 'topMenu.php';
 ?>
 <div class="pageNF">
     <br />
     <br />
     <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <h1>PODANA STRONA NIE ISTNIEJE!</h1>
+    <br />
+    <br />
+    <br />
     <br />
     <br />
     <br />
