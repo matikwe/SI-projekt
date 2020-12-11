@@ -3,7 +3,7 @@
     font-family: sans-serif;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #232323;
@@ -65,7 +65,7 @@ body{
     background-color: darkgrey; /*zmiana koloru*/
 }
 
-#error{
+#error {
     color: yellow;
 }
 
@@ -152,15 +152,27 @@ body{
 footer {
     background-color: #000000;
     color: #777777;
-    padding: 30px;
+    padding: 0px;
     font-size: 40px;
-    height: 13%;
+    min-height: 150px;
+    width: 100%;
+}
+
+.footerText {
+    float: left;
+    width: 70%;
+    padding: 0px;
+}
+
+.facebookTile {
+    min-height: 150px;
+    min-width: 10%;
+
 }
 
 footer a {
-    float: right;
     color: white;
-    padding: 10px;
+    padding: 0px;
 }
 
 a:hover {
@@ -177,14 +189,17 @@ a:visited {
 
 .facebook {
     background-color: #0000CC;
+    float: left;
 }
 
 .facebook:hover {
     background-color: #3333CC;
+    float: left;
 }
 
 .instagram {
     background-color: #ff9999;
+    float: left;
 }
 
 .instagram:hover {
@@ -193,7 +208,7 @@ a:visited {
 
 .twitter {
     background-color: #55FFFF;
-    align-content: center;
+    float: left;
 }
 
 .twitter:hover {
