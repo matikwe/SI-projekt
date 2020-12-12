@@ -14,11 +14,18 @@
         </div>
         <div class="articles">
             <div class="article">A1</div>
-            <div class="article">A2</div>
-            <div class="article">A3</div>
-            <div class="article">A4</div>
-            <div class="article">A5</div>
-            <div class="article">A6</div>
+
+            <div class="article">
+                <h2>Test</h2>
+                <p>More testing</p>
+            </div>
+
+            <div class="article">
+                <h2>Test</h2>
+                <p>More testing</p>
+            </div>
+
+
             <div class="numbering">
                 PAGE
             </div>

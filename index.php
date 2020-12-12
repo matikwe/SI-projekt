@@ -1,4 +1,3 @@
-<title>WWW</title>
 <?php
 session_start();
 
@@ -23,4 +22,3 @@ include(_ROOT_PATH.DIRECTORY_SEPARATOR.'actions'.DIRECTORY_SEPARATOR.$action.'.p
 include(_ROOT_PATH.DIRECTORY_SEPARATOR.'views'.DIRECTORY_SEPARATOR.$action.'.php');
 
 include 'footer.php';
-?>
