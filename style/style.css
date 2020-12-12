@@ -167,12 +167,14 @@ footer {
 .facebookTile {
     min-height: 150px;
     min-width: 10%;
-
 }
 
 footer a {
     color: white;
     padding: 0px;
+    display: block;
+    width: 10%;
+    min-height: 150px;
 }
 
 a:hover {
