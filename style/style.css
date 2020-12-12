@@ -14,6 +14,7 @@ body {
     background-size: cover;
     border-radius: 3px;
     text-align: center;
+    min-height: 100%;
 }
 
 .login .form {
@@ -156,12 +157,13 @@ footer {
     font-size: 40px;
     min-height: 100px;
     width: 100%;
+    display: block;
 }
 
 .footerText {
     float: left;
     width: 70%;
-    padding: 0px;
+    padding: 20px;
 }
 
 .facebookTile {
@@ -171,10 +173,11 @@ footer {
 
 footer a {
     color: white;
-    padding: 30px;
+    padding: 20px;
     display: block;
     width: 10%;
     text-align: center;
+    min-height: 100px;
 }
 
 a:hover {
@@ -226,7 +229,8 @@ option a {
     align-content: center;
     text-align: center;
     color: #FFFFFF;
-
+    margin: 100px;
+    clear: both;
 }
 
 .pageNF a {
