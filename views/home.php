@@ -20,6 +20,11 @@
                 <p>More testing</p>
             </div>
 
+            <div class="article">
+                <h2>Test</h2>
+                <p>More testing</p>
+            </div>
+
 
             <div class="numbering">
                 PAGE
