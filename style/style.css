@@ -302,6 +302,13 @@ option a {
     background-color: #111111;
 }
 
+.headercontact{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
 .call:hover{
     background-color: #444444;
 
