@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="pl-PL">
 <head>
     <meta charset="utf-8">
@@ -10,66 +9,36 @@
 <?php
 include 'topMenu.php';
 ?>
-<div class="contentabout">
 
-    <div class="headerabout">
+<div class="container">
 
-        <h2>Kim jesteśmy?</h2>
-
+    <div class="header">
+        <h1>Kim jesteśmy?</h1>
     </div>
 
-    <div class="userabout">
-
-        <div class="iconabout">
-
-            <img class="iconabout" src="./userprofile.jpg" alt="User Profile">
-
+    <div class="content">
+        <div class="user">
+            <div class="icon">
+                <img src="./userprofile.jpg" alt="User Profile">
+            </div>
+            <div class="text">
+                <h1>Kuźmicki Kamil</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non ligula a neque blandit dignissim. Proin hendrerit et ipsum fringilla porta. Donec vel diam sit amet tellus pulvinar iaculis.</p>
+            </div>
         </div>
-
-        <div class="infoabout">
-
-            <h2>Kuźmicki Kamil</h2>
-
-            <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer magna nisl, aliquet sit amet eleifend eget, sollicitudin in urna. Sed non magna eget enim sagittis consequat ac a velit. Sed tempor bibendum gravida. Praesent in maximus felis, nec vestibulum lectus. Suspendisse tempus felis arcu, id efficitur leo porttitor in. Proin id metus orci. Cras viverra eros in libero dapibus, at pulvinar velit luctus.</p>
-
+        <div class="user">
+            <div class="icon">
+                <img src="./userprofile.jpg" alt="User Profile">
+            </div>
+            <div class="text">
+                <h1>Kuźmicki Kamil</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non ligula a neque blandit dignissim. Proin hendrerit et ipsum fringilla porta. Donec vel diam sit amet tellus pulvinar iaculis.</p>
+            </div>
         </div>
-
-    </div>
-
-    <div class="userabout">
-
-        <div class="iconabout">
-
-            <img class="iconabout" src="./userprofile.jpg" alt="User Profile">
-
-        </div>
-
-        <div class="infoabout">
-
-            <h2>Rączka Mateusz</h2>
-
-            <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer magna nisl, aliquet sit amet eleifend eget, sollicitudin in urna. Sed non magna eget enim sagittis consequat ac a velit. Sed tempor bibendum gravida. Praesent in maximus felis, nec vestibulum lectus. Suspendisse tempus felis arcu, id efficitur leo porttitor in. Proin id metus orci. Cras viverra eros in libero dapibus, at pulvinar velit luctus.</p>
-
-        </div>
-
-    </div>
-
-    <div class="userabout">
-
-        <div class="iconabout">
-
-            <img class="iconabout" src="./userprofile.jpg" alt="User Profile">
-
-        </div>
-
-        <div class="infoabout">
-
-            <h2>Szolc Joachim</h2>
-
-            <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer magna nisl, aliquet sit amet eleifend eget, sollicitudin in urna. Sed non magna eget enim sagittis consequat ac a velit. Sed tempor bibendum gravida. Praesent in maximus felis, nec vestibulum lectus. Suspendisse tempus felis arcu, id efficitur leo porttitor in. Proin id metus orci. Cras viverra eros in libero dapibus, at pulvinar velit luctus.</p>
-
-        </div>
-
     </div>
 
 </div>
+
+
+</body>
+</html>
