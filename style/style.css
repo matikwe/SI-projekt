@@ -23,7 +23,7 @@ body {
 .login .form h2 {
     color: #FFF;
     text-align: center;
-    font-size: 400%;
+    font-size: 70px;
     padding-bottom: 1%;
     padding-top: 1%;
     font-weight: bold;
@@ -230,7 +230,11 @@ option a {
 .header {
     text-align: center;
     color: #FFF;
-    font-size: 200%;
+    font-size: 30px;
+}
+
+.header h1 {
+    padding-top: 5%;
 }
 
 .content {
@@ -286,7 +290,6 @@ option a {
     .text h1 {
         text-align: center;
         margin-left: 0px;
-
     }
     .icon, .icon img {
         text-align: center;
