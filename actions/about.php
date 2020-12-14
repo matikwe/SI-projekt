@@ -1,6 +1,6 @@
 <?php
 include 'Database.php';
-include 'user.php';
+include 'User.php';
 
 $data = new Database('blog');
 
@@ -14,7 +14,7 @@ $query = $data->getHandle()->query('SELECT user_id, login FROM user');
 }*/
 
 for ($i = 0; $row = $query->fetch(); $i++){
-    $user[$i] = new user($row['user_id'], $row['login']);
+    $user[$i] = new User($row['user_id'], $row['login']);
 }
 
 $_SESSION['w'] = $i;
