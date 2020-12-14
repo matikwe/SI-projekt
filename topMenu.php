@@ -1,10 +1,10 @@
-<div class="top-bar">
+<nav>
     <div class="logo">
         logo
     </div>
     <div class="menu">
 
-        <a href="index.php?action=about"><div class="option">O NAS</div></a>
+        <a href="index.php?action=about" class="option">O NAS</a>
         <a href="index.php?action=chat"><div class="option">CZAT</div></a>
         <a href="index.php?action=contact"><div class="option">KONTAKT</div></a>
         <?php
@@ -20,4 +20,4 @@
     <div class="search">
         szukaj
     </div>
-</div>
+</nav>
