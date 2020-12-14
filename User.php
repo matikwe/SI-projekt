@@ -1,7 +1,7 @@
 <?php
 
 
-class user {
+class User {
 
     private $user_id;
     private $login;
