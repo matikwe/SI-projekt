@@ -13,12 +13,12 @@ body {
 .login {
     border-radius: 3px;
     text-align: center;
-    min-height: 100%;
+    height: calc(100% - 176px)
 }
 
 .login .form {
     padding: 15px 20px;
-    height: 87%;
+    /*height: ;*/
 }
 
 .login .form h2 {
