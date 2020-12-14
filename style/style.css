@@ -249,8 +249,14 @@ option a {
 .user {
     min-height: 220px;
     margin-bottom: 20px;
-    background-image:  linear-gradient(170deg, #393f46, #0a0b10);
+    background-image: linear-gradient(170deg, #393f46, #0a0b10);
     border-radius: 40px;
+
+}
+
+.user:hover {
+    box-shadow: 1px 1px darkorange;
+    cursor: pointer;
 }
 
 .text {
