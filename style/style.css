@@ -8,7 +8,6 @@ body {
     padding: 0;
     background: rgba(0, 0, 0, .85) url("https://wallpaperaccess.com/full/1163018.jpg");
     background-blend-mode: darken;
-
 }
 
 .login {
@@ -63,7 +62,7 @@ body {
 }
 
 .login .form input.submit:hover {
-    background-color: darkgrey; /*zmiana koloru*/
+    background-color: darkgrey; /* zmiana koloru */
 }
 
 #error {
@@ -180,6 +179,7 @@ footer a {
     width: 100px;
     text-align: center;
     min-height: 100px;
+    transition: 0.3s;
 }
 
 a:hover {
