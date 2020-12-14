@@ -10,8 +10,6 @@ body {
 }
 
 .login {
-    background-color: #232323;
-    background-size: cover;
     border-radius: 3px;
     text-align: center;
     min-height: 100%;
