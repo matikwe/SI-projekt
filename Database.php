@@ -1,15 +1,15 @@
 <?php
 class Database
 {
+
     static private $_instance = null;
     private $_handle;
-
     public function __construct($dbname)
     {
         try {
             $this->_handle = new PDO('mysql:host=localhost;dbname=' . $dbname, "root", "");
         } catch (PDOException $e) {
-            echo 'Połączenie nie mogło zostać utworzone: ' . $e->getMessage();
+            $_SESSION['errorDB'] = 'Połączenie nie mogło zostać utworzone: ' . $e->getMessage();
         }
     }
 

@@ -61,10 +61,10 @@ if(isset($_POST['action'])) {
                 $_SESSION['eLoginDB'] = "Użytkownik o podanym loginie istnieje";
             }
 
-            if($addDB == true)
-
-                $addUser = $database->getHandle()->query('INSERT INTO user(user_id, login, password, email, role) VALUES ("'.$count.'","'.$login.'","'.$passHash.'","'.$mailA.'","'.$role.'")');
+            if($addDB == true) {
+                $addUser = $database->getHandle()->query('INSERT INTO user(user_id, login, password, email, role) VALUES ("' . $count . '","' . $login . '","' . $passHash . '","' . $mailA . '","' . $role . '")');
                 header("Location: index.php?action=login");
+            }
         }
     }
 }

@@ -11,7 +11,7 @@ if(isset($_POST['buttonLogin'])){
         $correctLogin = true;
     }else{
         $database = new Database('blog');
-        $query = $database->getHandle()->query('SELECT login, password FROM user WHERE login="'.$_POST['login'].'"');
+        $query = $database->getHandle()->query(sprintf("SELECT login, password FROM user WHERE login=\"%s\"", $_POST['login']));
 
         foreach($query as $row){
             if(password_verify($_POST['password'], $row['password']) == true){
