@@ -162,7 +162,7 @@ footer {
 
 .footerText {
     float: left;
-    width: 70%;
+    width: calc(100% - 300px);
     padding: 20px;
 }
 
@@ -175,7 +175,7 @@ footer a {
     color: white;
     padding: 20px;
     display: block;
-    width: 10%;
+    width: 100px;
     text-align: center;
     min-height: 100px;
 }
