@@ -9,6 +9,7 @@
 
 <?php
 include 'topMenu.php';
+$i = $_SESSION['w'];
 ?>
 
 <div class="container">
@@ -18,15 +19,29 @@ include 'topMenu.php';
     </div>
 
     <div class="content">
+        <?php
+        for ($o = 0; $i > $o; $o++){
+        ?>
         <div class="user">
             <div class="icon">
                 <img src="./userprofile.jpg" alt="User Profile">
             </div>
             <div class="text">
-                <h1>Kuźmicki Kamil</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non ligula a neque blandit dignissim. Proin hendrerit et ipsum fringilla porta. Donec vel diam sit amet tellus pulvinar iaculis.</p>
+                <h1>
+                    <?php
+                        echo $user[$o]->getLogin();
+                    ?>
+                </h1>
+                <p>
+                    <?php
+                        echo $user[$o]->getLogin();
+                    ?>
+                </p>
             </div>
         </div>
+        <?php
+        }
+        ?>
         <div class="user">
             <div class="icon">
                 <img src="./userprofile.jpg" alt="User Profile">
@@ -37,9 +52,4 @@ include 'topMenu.php';
             </div>
         </div>
     </div>
-
 </div>
-
-
-</body>
-</html>
