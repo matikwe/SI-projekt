@@ -228,33 +228,32 @@ option a {
 }
 
 .header {
-    width: 70%;
-
     text-align: center;
     color: #FFF;
-    margin-left: 15%;
     font-size: 200%;
 }
 
 .content {
     width: 70%;
-    margin-top: 10px;
+    height: auto;
     margin-left: 15%;
     background: #444444;
 }
 
 .user {
-    height: 240px;
+    min-height: 240px;
     border-bottom: solid 20px #232323;
 }
 
 .text {
-    width: 85%;
+    width: 80%;
+    max-width: 90%;
+    height: auto;
     float: right;
+
 }
 
 .text h1 {
-    max-width: 90%;
     font-size: 33px;
     margin-left: 40px;
 }
@@ -262,21 +261,42 @@ option a {
 .text p {
     max-width: 90%;
     font-size: 15px;
-    margin: 30px 0px 30px 40px;
+
     line-height: 25px;
     color: #919191;
     text-align: justify;
 }
 
 .icon {
-    width: 15%;
+    width: auto;
     float: left;
 }
 
+@media screen and (max-width:1600px) {
+    .icon, .text, .text p{
+        width:100%;
+        max-width: 100%;
+    }
+    .text {
+        padding: 10px;
+    }
+    .user {
+        min-height: 480px;
+    }
+    .text h1 {
+        text-align: center;
+        margin-left: 0px;
+
+    }
+    .icon, .icon img {
+        text-align: center;
+    }
+}
+
 .icon img {
-    width: 100%;
-    height: 100%;
-    padding: 15px;
+    max-width: 220px;
+    max-height: 220px;
+    padding: 10px;
 }
 
 .pageNF {
@@ -298,6 +318,13 @@ option a {
 
 .pageNF a:hover {
     background-color: #111111;
+}
+
+.headercontact {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
 }
 
 .call:hover{
