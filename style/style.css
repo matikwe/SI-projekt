@@ -334,17 +334,81 @@ option a {
     background-color: #111111;
 }
 
+.mail {
+    border-radius: 3px;
+    text-align: center;
+    min-height: 100%;
+}
 .headercontact {
+
     width: 100%;
     text-align: center;
     font-weight: bold;
     padding: 20px;
+    color: #DDDDDD;
 }
 
-.call:hover{
-    background-color: #444444;
 
+
+
+.mail {
+    border-radius: 3px;
+    text-align: center;
+    min-height: 100%;
 }
-.write:hover{
-    background-color: #444444;
+
+.mail .form {
+    padding: 15px 20px;
+    height: 87%;
 }
+.mail .form input {
+    width: 40%;
+    height: 40px;
+    background: rgba(255,255,255,.5);
+    border: 1px solid rgba(255,255,255,.1);
+    padding: 0 15px;
+    color: #FFF;
+    border-radius: 15px;
+    font-size: 14px;
+    display: block;
+    margin-left: 30%;
+    margin-bottom: 1%;
+}
+.mail .form textarea {
+    width: 40%;
+    height: 230px;
+    background: rgba(255,255,255,.5);
+    border: 1px solid rgba(255,255,255,.1);
+    padding: 0 15px;
+    color: #FFF;
+    border-radius: 15px;
+    font-size: 14px;
+    display: block;
+    margin-left: 30%;
+    margin-bottom: 1%;
+}
+
+.mail .form input:focus {
+    border: 1px solid rgba(255,255,255,.8);
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: #DDD;
+}
+
+.mail .form input.submit {
+    background: rgba(255,255,255,.9);
+    color: #444;
+    font-size: 15px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.mail .form input.submit:hover {
+    background-color: darkgrey; /* zmiana koloru */
+}
+.mail h3{
+    color: #DDDDDD;
+}
+
