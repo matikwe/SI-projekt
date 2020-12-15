@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif;
+    transition: 0.3s;
 }
 
 body {
@@ -80,15 +81,17 @@ body {
 
 nav {
     width: 100%;
-    /*clear: both;*/
-    /*margin-bottom: 100px;*/
     height: 76px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: black;
 }
 
 .menu {
     width: 80%;
     float: left;
-    background-color: black;
+
     color: white;
     height: 76px;
 }
@@ -131,6 +134,10 @@ nav {
     width: 10%;
     text-align: center;
     padding: 20px;
+}
+
+.search form input {
+    border-radius: 15px;
 }
 
 .ad1 {

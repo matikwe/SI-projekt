@@ -18,6 +18,8 @@
     </div>
 
     <div class="search">
-        szukaj
+        <form action="index.php?action=searchResults" method="POST">
+            <input type="text" placeholder="Wyszukaj..." name="searchField">
+        </form>
     </div>
 </nav>
