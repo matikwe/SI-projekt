@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif;
+    transition: 0.3s;
 }
 
 body {
@@ -13,12 +14,12 @@ body {
 .login {
     border-radius: 3px;
     text-align: center;
-    min-height: 100%;
+    height: calc(100% - 176px)
 }
 
 .login .form {
     padding: 15px 20px;
-    height: 87%;
+    /*height: ;*/
 }
 
 .login .form h2 {
@@ -78,15 +79,21 @@ body {
     text-decoration: underline;
 }
 
-.top-bar {
+nav {
     width: 100%;
+    height: 76px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: black;
 }
 
 .menu {
     width: 80%;
     float: left;
-    background-color: black;
+
     color: white;
+    height: 76px;
 }
 
 .menu a {
@@ -97,11 +104,13 @@ body {
 .option {
     float: left;
     width: 20%;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     font-weight: bold;
     border-radius: 0px;
     text-decoration: none;
+    font-size: 16px;
+    height: 76px;
 }
 
 .option a {
@@ -125,6 +134,10 @@ body {
     width: 10%;
     text-align: center;
     padding: 20px;
+}
+
+.search form input {
+    border-radius: 15px;
 }
 
 .ad1 {
@@ -253,7 +266,6 @@ option a {
     margin-bottom: 20px;
     background-image: linear-gradient(170deg, #393f46, #0a0b10);
     border-radius: 40px;
-
 }
 
 .user:hover {
@@ -314,12 +326,16 @@ option a {
 }
 
 .pageNF {
-    height: 800px;
-    align-content: center;
+    height: calc(100% - 276px);
     text-align: center;
     color: #FFFFFF;
-    margin: 100px;
+    margin-top: 100px;
     clear: both;
+}
+
+.pageNF h1 {
+    color: orange;
+    margin: 100px;
 }
 
 .pageNF a {
@@ -328,6 +344,8 @@ option a {
     background-color: #000000;
     padding: 20px;
     border-radius: 40px;
+    border: 1px solid orange;
+    transition: 0.3s;
 }
 
 .pageNF a:hover {

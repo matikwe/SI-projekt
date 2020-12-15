@@ -1,10 +1,10 @@
-<div class="top-bar">
+<nav>
     <div class="logo">
         logo
     </div>
     <div class="menu">
 
-        <a href="index.php?action=about"><div class="option">O NAS</div></a>
+        <a href="index.php?action=about" class="option">O NAS</a>
         <a href="index.php?action=chat"><div class="option">CZAT</div></a>
         <a href="index.php?action=contact"><div class="option">KONTAKT</div></a>
         <?php
@@ -18,6 +18,9 @@
     </div>
 
     <div class="search">
-        szukaj
+        <form action="index.php?action=searchResults" method="POST">
+            <input type="text" placeholder="Wyszukaj..." name="searchField">
+            <button type="submit"><i class="icon-search"></i></button>
+        </form>
     </div>
-</div>
+</nav>
