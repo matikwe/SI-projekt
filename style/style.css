@@ -148,9 +148,9 @@ nav {
 }
 
 .articles {
-    float: left;
-    width: 80%;
+    border-radius: 3px;
     text-align: center;
+    height: calc(100% - 176px)
 }
 
 .article {
@@ -193,6 +193,12 @@ footer a {
     text-align: center;
     min-height: 100px;
     transition: 0.3s;
+}
+.home {
+    border-radius: 3px;
+    text-align: center;
+    height: calc(100% - 176px)
+
 }
 
 a:hover {
