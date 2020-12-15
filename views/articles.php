@@ -2,13 +2,19 @@
 <head>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/fontello.css">
-    <title>Logowanie</title>
+    <title>Artykuły</title>
 </head>
 <body>
 <?php
 include 'topMenu.php';
 ?>
 <div class="articles">
+
+    <?php
+
+
+    ?>
+    <br><br><br>
 
     <article id="post-1" class="thumbnail"">
     <div class="entry-thumbnail">
