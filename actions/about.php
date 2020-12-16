@@ -5,7 +5,7 @@ include 'User.php';
 $data = new Database('blog');
 
 $data->count('user');
-$query = $data->getHandle()->query('SELECT user_id, login FROM user');
+$query = $data->getHandle()->query('SELECT user_id, login, password, role FROM user');
 
 
 
@@ -14,7 +14,7 @@ $query = $data->getHandle()->query('SELECT user_id, login FROM user');
 }*/
 
 for ($i = 0; $row = $query->fetch(); $i++){
-    $user[$i] = new User($row['user_id'], $row['login']);
+    $user[$i] = new User($row['user_id'], $row['login'], $row['password'], $row['role']);
 }
 
 $_SESSION['w'] = $i;

@@ -1,6 +1,13 @@
 <nav>
     <div class="logo">
-        logo
+        <!-- TO należy dostosować do menu !!!!!-->
+        <?php
+        if(!empty($_SESSION['currentRole'])){
+            if($_SESSION['currentRole'] == 'admin'){
+                echo"<a href='index.php?action=adminPanel'><div class='option'>Panel Admina</div></a>";
+            }
+        }
+            ?>
     </div>
     <div class="menu">
 
