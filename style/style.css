@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif;
-    transition: 0.3s;
+    transition: 1s;
 }
 
 body {
@@ -276,7 +276,6 @@ option a {
 
 .user:hover {
     box-shadow: 1px 1px darkorange;
-    cursor: pointer;
 }
 
 .text {
@@ -372,8 +371,30 @@ option a {
     color: #DDDDDD;
 }
 
+.edit {
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin: 15px;
+    background-color: rgb(74, 74, 74);
+    outline: none;
+    display: inline-block;
+}
 
+.edit:hover {
+    background-color: rgb(239, 239, 239);
+    cursor: pointer;
+}
 
+.pencilart {
+    background-image: url(https://icons-for-free.com/iconfiles/png/512/edit+pen+pencil+icon-1320183237584811650.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: transparent;
+    padding: 10px;
+}
 
 .mail {
     border-radius: 3px;

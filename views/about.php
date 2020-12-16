@@ -27,6 +27,7 @@ $i = $_SESSION['w'];
                 <img src="./userprofile.jpg" alt="User Profile">
             </div>
             <div class="text">
+                <button type="button" class="edit"><span class="pencilart">o</span></button>
                 <h1><?php echo $user[$o]->getLogin();?>
                 </h1>
                 <p><?php echo $user[$o]->getLogin();?>
