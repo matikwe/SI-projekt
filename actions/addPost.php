@@ -17,11 +17,17 @@ if(isset($_POST['addPost'])){
         $_SESSION['errorUrl'] = "Wpisz link do zdjęcia.";
         $validation = false;
     }
+    if(!empty($_POST['title'])){
+        $title = $_POST['title'];
+    }else{
+        $_SESSION['errorTitle'] = "Wpisz tytuł.";
+        $validation = false;
+    }
 
     if($validation == true){
        $database = new Database('blog');
        $count = $database->count('artykul')+1;
        $login = $_SESSION['currentLogin'];
-       $query = $database->getHandle()->query('INSERT INTO artykul(id_artykulu, tresc, autor, zdjecie, akceptacja_admina) VALUES ("' . $count . '","' . $post . '","' . $login . '","' . $url . '","false")');
+       $query = $database->getHandle()->query('INSERT INTO artykul(id_artykulu, tresc, autor, zdjecie, akceptacja_admina) VALUES ("' . $count . '","'.$title.'","' . $post . '","' . $login . '","' . $url . '","false")');
     }
 }

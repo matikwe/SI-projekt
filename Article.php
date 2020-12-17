@@ -3,6 +3,7 @@ class Article
 {
     private $id_article;
     private $contents;
+    private $title;
     private $author;
     private $img;
     private $adminAccept;
@@ -11,18 +12,37 @@ class Article
      * Article constructor.
      * @param $id_article
      * @param $contents
+     * @param $title
      * @param $author
      * @param $img
      * @param $adminAccept
      */
-    public function __construct($id_article, $contents, $author, $img, $adminAccept)
+    public function __construct($id_article, $contents, $title, $author, $img, $adminAccept)
     {
         $this->id_article = $id_article;
         $this->contents = $contents;
+        $this->title = $title;
         $this->author = $author;
         $this->img = $img;
         $this->adminAccept = $adminAccept;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param mixed $title
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+    }
+
 
     /**
      * @return mixed

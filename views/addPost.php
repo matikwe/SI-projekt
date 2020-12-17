@@ -10,6 +10,7 @@
         <form action="index.php?action=addPost" method="post">
             <h3>Dodaj artykuł</h3><br>
             <textarea name="post" placeholder="Wpisz treść artykułu"></textarea>
+            <input type="text" placeholder="Wpisz tytuł" name="title">
             <input type="text" placeholder="Wklej link do zdjęcia" name="url">
             <div id="error">
                 <?php
@@ -18,6 +19,9 @@
                     }
                     if(!empty($_SESSION['errorUrl'])){
                         echo $_SESSION['errorUrl'];
+                    }
+                    if(!empty($_SESSION['errorTitle'])){
+                        echo $_SESSION['errorTitle'];
                     }
                 ?>
             </div>
