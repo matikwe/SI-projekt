@@ -6,7 +6,7 @@ $database = new Database('blog');
 
 $query = $database->getHandle()->query('SELECT * FROM artykul');
 $i = 0;
-
+$j = 0;
 foreach ($query as $item) {
     $article = new Article($item['id_artykulu'], $item['tresc'], $item['autor'], $item['zdjecie'], $item['akceptacja_admina']);
 
@@ -14,5 +14,11 @@ foreach ($query as $item) {
         $_SESSION['articles'][$i] = serialize($article);
         $i++;
     }
+    if($item['akceptacja_admina'] == "false") {
+        $_SESSION['articlesNotAccepted'][$j] = serialize($article);
+        $j++;
+    }
 }
+
 $_SESSION['countArticles'] = $i;
+$_SESSION['countArticlesNotAccepted'] = $j;

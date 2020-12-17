@@ -18,8 +18,9 @@ include 'topMenu.php';
         //dokładne info w klasie Article
         echo '<img src="'.$article->getImg().'"/>';
     }
-
     ?>
+    <!-- akcaptacja artykulu do ogarniecia w menu/ lub przycisk ?!-->
+
     <br><br><br>
 
     <article id="post-1" class="thumbnail"">
