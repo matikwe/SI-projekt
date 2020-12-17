@@ -15,7 +15,7 @@ if(isset($_POST['button'])){
             $database = new Database('blog');
             $query = $database->getHandle()->query('SELECT count(*) FROM pytania WHERE email="'.$email.'" AND czyKontakt="false"');
 
-            if($query->fetchColumn() >=1){
+            if($query->fetchColumn() >= 1){
                 $_SESSION['eFormatMail'] = "Zaczekaj na kontakt z naszym konsultantem. Wysłałeś już zapytanie.";
             }else{
                 $count = $database->count('pytania')+1;

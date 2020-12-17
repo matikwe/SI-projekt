@@ -13,10 +13,10 @@
         <form action="index.php?action=userModification&name=editNow&id=<?php echo $_SESSION['idEdit'] ?>" method="POST">
             <label>
                 <?php
-                $user = unserialize($_SESSION['users'][($_SESSION['idEdit']-1)]);
+                $user = unserialize($_SESSION['userDisplay'][($_GET['id']-1)]);
 
-                echo '<input type="text" placeholder="Wpisz login" name="login" value="'.$_SESSION['loginAbout'].'">';
-                echo '<input type="text" placeholder="Wpisz mail" name="mail" value="'.$_SESSION['emailAbout'].'">';
+                echo '<input type="text" placeholder="Wpisz login" name="login" value="'.$user->getLogin().'">';
+                echo '<input type="text" placeholder="Wpisz mail" name="mail" value="'.$user->getEmail().'">';
                 ?>
                 <select name="role">
                     <option value="admin">Admin</option>

@@ -30,7 +30,8 @@ include 'topMenu.php';
                 <?php
                 if(!empty($_SESSION['currentRole'])){
                     if($_SESSION['currentRole'] == 'admin'){
-                        echo '<a href="index.php?action=userModification&name=editNow"><button type="button" class="edit"><span class="pencilart">o</span></button></a>';
+                        echo '<a href="index.php?action=userModification&name=editNow&id='.$user->getUserId().'"><button type="button" class="edit"><span class="pencilart">o</span></button></a>';
+                        //złe zastosowanie, ale działa :)
                         $_SESSION['loginAbout'] = $user->getLogin();
                         $_SESSION['emailAbout'] = $user->getEmail();
                     }
@@ -43,7 +44,7 @@ include 'topMenu.php';
                 </p>
             </div>
         </div>
-        <?php $_SESSION['idEdit'] = $user->getUserId();
+        <?php
         }
         ?>
         <div class="user">

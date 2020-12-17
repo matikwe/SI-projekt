@@ -28,9 +28,7 @@ if(isset($_POST['action'])) {
                 if ((filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL))) {
 
                     $idCurrent = $_SESSION['idEdit'];
-                    $user = unserialize($_SESSION['users'][$idCurrent - 1]);
-                    $update = $database->getHandle()->query('UPDATE user SET user_id="' . $idCurrent . '", login="' . $_POST['login'] . '", password="' . $user->getPassword() . '", email="' . $_POST['mail'] . '", role="' . $_POST['role'] . '"  WHERE user_id="' . $idCurrent . '"');
-
+                    $update = $database->getHandle()->query('UPDATE user SET user_id="' . $idCurrent . '", login="' . $_POST['login'] . '", email="' . $_POST['mail'] . '", role="' . $_POST['role'] . '"  WHERE user_id="' . $idCurrent . '"');
 
                     header("Location: index.php?action=about");
                 } else {
