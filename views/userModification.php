@@ -8,9 +8,10 @@
 <?php
     include "topMenu.php";
     ?>
+
     <div class="login">
         <div class="form">
-        <form action="index.php?action=userModification&name=editNow&id=<?php echo $_SESSION['idEdit'] ?>" method="POST">
+        <form action="index.php?action=userModification&name=edit&id=<?php echo $_GET['id']?>" method="POST">
             <label>
                 <?php
                 $user = unserialize($_SESSION['userDisplay'][($_GET['id']-1)]);
@@ -34,12 +35,13 @@
                     }
                     echo '</div>';
                 ?>
-            <input type="submit" value="Modyfikuj" class="submit" name="action">
+            <input type="submit" value="Modyfikuj" class="submit">
 
             </label>
             </form>
         </div>
     </div>
+
 
 
 
