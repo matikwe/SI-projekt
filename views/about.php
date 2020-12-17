@@ -9,7 +9,6 @@
 
 <?php
 include 'topMenu.php';
-$i = $_SESSION['w'];
 ?>
 
 <div class="container">
@@ -20,21 +19,31 @@ $i = $_SESSION['w'];
 
     <div class="content">
         <?php
-        for ($o = 0; $i > $o; $o++){
+        for ($i = 0; $i < $_SESSION['countUserDisplay']; $i++){
+            $user = unserialize($_SESSION['userDisplay'][$i]);
         ?>
         <div class="user">
             <div class="icon">
                 <img src="./userprofile.jpg" alt="User Profile">
             </div>
             <div class="text">
-                <button type="button" class="edit"><span class="pencilart">o</span></button>
-                <h1><?php echo $user[$o]->getLogin();?>
+                <?php
+                if(!empty($_SESSION['currentRole'])){
+                    if($_SESSION['currentRole'] == 'admin'){
+                        echo '<a href="index.php?action=userModification&name=editNow"><button type="button" class="edit"><span class="pencilart">o</span></button></a>';
+                        $_SESSION['loginAbout'] = $user->getLogin();
+                        $_SESSION['emailAbout'] = $user->getEmail();
+                    }
+                }
+                ?>
+
+                <h1><?php echo $user->getLogin();?>
                 </h1>
-                <p><?php echo $user[$o]->getLogin();?>
+                <p><?php echo $user->getLogin();?>
                 </p>
             </div>
         </div>
-        <?php
+        <?php $_SESSION['idEdit'] = $user->getUserId();
         }
         ?>
         <div class="user">

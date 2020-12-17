@@ -12,9 +12,18 @@ $query = $data->getHandle()->query('SELECT * FROM user');
 /*foreach($query as $row) {
     $user[$row] = new user($row[user_id], $row['login']);
 }*/
-
+/*
 for ($i = 0; $row = $query->fetch(); $i++){
     $user[$i] = new User($row['user_id'], $row['login'], $row['password'], $row['email'], $row['role']);
 }
+*/
+//$_SESSION['w'] = $i;
 
-$_SESSION['w'] = $i;
+//lepsze rozwiązanie
+$i = 0;
+foreach ($query as $item){
+    $user = new User($item['user_id'], $item['login'], $item['password'], $item['email'], $item['role']);
+    $_SESSION['userDisplay'][$i] = serialize($user);
+    $i++;
+}
+$_SESSION['countUserDisplay'] = $i;

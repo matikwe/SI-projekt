@@ -1,13 +1,6 @@
 <nav>
     <div class="logo">
-        <!-- TO należy dostosować do menu !!!!!-->
-        <?php
-        if(!empty($_SESSION['currentRole'])){
-            if($_SESSION['currentRole'] == 'admin'){
-                echo"<a href='index.php?action=userModification'><div class='option'>Modyfikacja użytkownika</div></a>";
-            }
-        }
-            ?>
+        LOGO
     </div>
     <div class="menu">
 
