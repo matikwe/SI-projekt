@@ -57,13 +57,9 @@
                         if (!empty($_SESSION['error'])) {
                             echo $_SESSION['error'];
                         }
-                        if (!empty($_SESSION['eMailDB'])) {
-                            echo $_SESSION['eMailDB'];
+                        if (!empty($_SESSION['eFormatMail'])) {
+                            echo $_SESSION['eFormatMail'];
                         }
-                        if (!empty($_SESSION['eLoginDB'])) {
-                            echo $_SESSION['eLoginDB'];
-                        }
-
                         echo '</div>';
                     }
                     ?>
