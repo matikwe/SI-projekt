@@ -9,19 +9,19 @@ class Article
 
     /**
      * Article constructor.
-     * @param $id_artykulu
-     * @param $tresc
-     * @param $autor
-     * @param $zdjecie
-     * @param $akceptacjaAdmina
+     * @param $id_article
+     * @param $contents
+     * @param $author
+     * @param $img
+     * @param $adminAccept
      */
-    public function __construct($id_artykulu, $tresc, $autor, $zdjecie, $akceptacjaAdmina)
+    public function __construct($id_article, $contents, $author, $img, $adminAccept)
     {
-        $this->id_artykulu = $id_artykulu;
-        $this->tresc = $tresc;
-        $this->autor = $autor;
-        $this->zdjecie = $zdjecie;
-        $this->akceptacjaAdmina = $akceptacjaAdmina;
+        $this->id_artykulu = $id_article;
+        $this->tresc = $contents;
+        $this->autor = $author;
+        $this->zdjecie = $img;
+        $this->akceptacjaAdmina = $adminAccept;
     }
 
     /**
