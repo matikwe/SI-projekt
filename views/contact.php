@@ -16,14 +16,22 @@ include 'topMenu.php';
 </div>
 <div class="mail">
     <div class="form">
-    <form action="mail.php" method="post">
+    <form action="index.php?action=contact" method="post">
         <h3>NAPISZ DO NAS</h3><br>
-        <input type="text" placeholder="Imię" id="name" name="name"><br><br>
-        <input type="text" placeholder="Nazwisko" id="surname" name="surname"><br><br>
-        <input type="text" placeholder="Mail" id="mail" name="mail"><br><br>
-        <textarea name="info"> </textarea>
-
-
+        <input type="text" placeholder="Imię" id="name" name="name" value="<?php if(!empty($_POST['name'])) echo $_POST['name']; ?>"><br><br>
+        <input type="text" placeholder="Nazwisko" id="surname" name="surname" value="<?php if(!empty($_POST['surname'])) echo $_POST['surname']; ?>"><br><br>
+        <input type="text" placeholder="Mail" id="mail" name="mail" value="<?php if(!empty($_POST['mail'])) echo $_POST['mail']; ?>"><br><br>
+        <textarea name="info"><?php if(!empty($_POST['info'])) echo $_POST['info']; ?></textarea>
+        <div id="error">
+            <?php
+                if (!empty($_SESSION['error'])) {
+                    echo $_SESSION['error'];
+                }
+                if (!empty($_SESSION['eFormatMail'])) {
+                    echo $_SESSION['eFormatMail'];
+                }
+            ?>
+        </div>
         <input type="submit" class="submit" name="button" value="Wyślij" />
     </form>
     </div>
