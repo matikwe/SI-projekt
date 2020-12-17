@@ -1,11 +1,11 @@
 <?php
 class Article
 {
-    private $id_artykulu;
-    private $tresc;
-    private $autor;
-    private $zdjecie;
-    private $akceptacjaAdmina;
+    private $id_article;
+    private $contents;
+    private $author;
+    private $img;
+    private $adminAccept;
 
     /**
      * Article constructor.
@@ -17,92 +17,95 @@ class Article
      */
     public function __construct($id_article, $contents, $author, $img, $adminAccept)
     {
-        $this->id_artykulu = $id_article;
-        $this->tresc = $contents;
-        $this->autor = $author;
-        $this->zdjecie = $img;
-        $this->akceptacjaAdmina = $adminAccept;
+        $this->id_article = $id_article;
+        $this->contents = $contents;
+        $this->author = $author;
+        $this->img = $img;
+        $this->adminAccept = $adminAccept;
     }
 
     /**
      * @return mixed
      */
-    public function getIdArtykulu()
+    public function getIdArticle()
     {
-        return $this->id_artykulu;
+        return $this->id_article;
     }
 
     /**
-     * @param mixed $id_artykulu
+     * @param mixed $id_article
      */
-    public function setIdArtykulu($id_artykulu)
+    public function setIdArticle($id_article)
     {
-        $this->id_artykulu = $id_artykulu;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getTresc()
-    {
-        return $this->tresc;
-    }
-
-    /**
-     * @param mixed $tresc
-     */
-    public function setTresc($tresc)
-    {
-        $this->tresc = $tresc;
+        $this->id_article = $id_article;
     }
 
     /**
      * @return mixed
      */
-    public function getAutor()
+    public function getContents()
     {
-        return $this->autor;
+        return $this->contents;
     }
 
     /**
-     * @param mixed $autor
+     * @param mixed $contents
      */
-    public function setAutor($autor)
+    public function setContents($contents)
     {
-        $this->autor = $autor;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getZdjecie()
-    {
-        return $this->zdjecie;
-    }
-
-    /**
-     * @param mixed $zdjecie
-     */
-    public function setZdjecie($zdjecie)
-    {
-        $this->zdjecie = $zdjecie;
+        $this->contents = $contents;
     }
 
     /**
      * @return mixed
      */
-    public function getAkceptacjaAdmina()
+    public function getAuthor()
     {
-        return $this->akceptacjaAdmina;
+        return $this->author;
     }
 
     /**
-     * @param mixed $akceptacjaAdmina
+     * @param mixed $author
      */
-    public function setAkceptacjaAdmina($akceptacjaAdmina)
+    public function setAuthor($author)
     {
-        $this->akceptacjaAdmina = $akceptacjaAdmina;
+        $this->author = $author;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getImg()
+    {
+        return $this->img;
+    }
+
+    /**
+     * @param mixed $img
+     */
+    public function setImg($img)
+    {
+        $this->img = $img;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAdminAccept()
+    {
+        return $this->adminAccept;
+    }
+
+    /**
+     * @param mixed $adminAccept
+     */
+    public function setAdminAccept($adminAccept)
+    {
+        $this->adminAccept = $adminAccept;
+    }
+
+
+
 
 
 

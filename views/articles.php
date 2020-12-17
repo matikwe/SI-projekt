@@ -15,7 +15,8 @@ include 'topMenu.php';
         $article = unserialize($_SESSION['articles'][$i]);
         //przykład pobrania danych
         //tak samo można się odwołać dla każdej wartości
-        echo '<img src="'.$article->getZdjecie().'"/>';
+        //dokładne info w klasie Article
+        echo '<img src="'.$article->getImg().'"/>';
     }
 
     ?>
