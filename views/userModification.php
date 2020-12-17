@@ -5,6 +5,8 @@
     <title>Strona główna</title>
 </head>
 <body>
+    <a href='index.php?action=contactPanel'>Kontakt panel</a>
+    <a href='index.php?action=addPost'>Dodaj artykuł</a>
 <?php
     include "topMenu.php";
     echo '<table border="2">';
@@ -24,7 +26,7 @@
             echo "<td>".$user->getLogin()."</td>";
             echo "<td>".$user->getEmail()."</td>";
             echo "<td>".$user->getRole()."</td>";
-            echo "<td><a href='index.php?action=adminPanel&name=edit&id=".$user->getUserId()."'>Edytuj</a> <a href='index.php?action=adminPanel&name=delete&id=".$user->getUserId()."'>Usuń</a></td>";
+            echo "<td><a href='index.php?action=userModification&name=edit&id=".$user->getUserId()."'>Edytuj</a> <a href='index.php?action=userModification&name=delete&id=".$user->getUserId()."'>Usuń</a></td>";
             echo "</tr>";
         }
     echo '</div>';
@@ -37,7 +39,7 @@
         ?>
         <div class="login">
             <div class="form">
-            <form action="index.php?action=adminPanel&name=editNow&id=<?php echo $_SESSION['idEdit'] ?>" method="POST">
+            <form action="index.php?action=userModification&name=editNow&id=<?php echo $_SESSION['idEdit'] ?>" method="POST">
                 <label>
                     <?php
                     $user = unserialize($_SESSION['users'][($_SESSION['idEdit']-1)]);
@@ -45,7 +47,7 @@
                     echo '<input type="text" placeholder="Wpisz login" name="login" value="'.$user->getLogin().'">';
                     echo '<input type="text" placeholder="Wpisz mail" name="mail" value="'.$user->getEmail().'">';
                     ?>
-                    <select name="role" id="cars">
+                    <select name="role">
                         <option value="admin">Admin</option>
                         <option value="redaktor">Redaktor</option>
                         <option value="czytelnik">Czytelnik</option>

@@ -29,7 +29,7 @@ if(!empty($_GET['name'])){
        {
            $update = $database->getHandle()->query('UPDATE user SET user_id="'.$i.'" WHERE user_id="'.($i+1).'"');
        }
-        header("Location: index.php?action=adminPanel");
+        header("Location: index.php?action=userModification");
     }
 
     if($_GET['name'] == "editNow"){
@@ -41,7 +41,7 @@ if(!empty($_GET['name'])){
                 $idCurrent = $_SESSION['idEdit'];
                 $user = unserialize($_SESSION['users'][$idCurrent - 1]);
                 $update = $database->getHandle()->query('UPDATE user SET user_id="' . $idCurrent . '", login="' . $_POST['login'] . '", password="' . $user->getPassword() . '", email="' . $_POST['mail'] . '", role="' . $_POST['role'] . '"  WHERE user_id="' . $idCurrent . '"');
-                header("Location: index.php?action=adminPanel");
+                header("Location: index.php?action=userModification");
             }else{
                 $_SESSION['eFormatMail'] = "Zły format maila";
             }

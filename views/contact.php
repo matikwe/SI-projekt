@@ -21,7 +21,7 @@ include 'topMenu.php';
         <input type="text" placeholder="Imię" id="name" name="name"><br><br>
         <input type="text" placeholder="Nazwisko" id="surname" name="surname"><br><br>
         <input type="text" placeholder="Mail" id="mail" name="mail"><br><br>
-        <textarea> </textarea>
+        <textarea name="info"> </textarea>
 
 
         <input type="submit" class="submit" name="button" value="Wyślij" />

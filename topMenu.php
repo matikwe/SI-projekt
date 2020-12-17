@@ -4,7 +4,7 @@
         <?php
         if(!empty($_SESSION['currentRole'])){
             if($_SESSION['currentRole'] == 'admin'){
-                echo"<a href='index.php?action=adminPanel'><div class='option'>Panel Admina</div></a>";
+                echo"<a href='index.php?action=userModification'><div class='option'>Modyfikacja użytkownika</div></a>";
             }
         }
             ?>
