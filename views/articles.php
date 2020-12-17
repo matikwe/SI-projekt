@@ -9,9 +9,14 @@
 include 'topMenu.php';
 ?>
 <div class="articles">
-
+    <p>Tak to powinno wyglądać !!! Proszę dopracować CSS</p>
     <?php
-
+    for($i = 0; $i < $_SESSION['countArticles']; $i++){
+        $article = unserialize($_SESSION['articles'][$i]);
+        //przykład pobrania danych
+        //tak samo można się odwołać dla każdej wartości
+        echo '<img src="'.$article->getZdjecie().'"/>';
+    }
 
     ?>
     <br><br><br>
@@ -27,5 +32,6 @@ include 'topMenu.php';
 
     <a href="" class="entry-link"><span class="screen-reader-text">Czytaj dalej <span class="meta-nav">&rarr;</span></span></a>
     </article>
+
 
 </div>
