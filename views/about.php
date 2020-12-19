@@ -30,7 +30,7 @@ include 'topMenu.php';
                 <?php
                 if(!empty($_SESSION['currentRole'])){
                     if($_SESSION['currentRole'] == 'admin'){
-                        echo '<a href="index.php?action=userModification&id='.$user->getUserId().'"><button type="button" class="edit"><span class="pencilart">e</span></button></a>'; //edycja
+                        echo '<a href="index.php?action=userModification&id='.$user->getUserId().'"><button type="button" class="edit"><span class="pencilart">eeeeeeeeeeee</span></button></a>'; //edycja
                         echo '<a href="index.php?action=userModification&name=delete&id='.$user->getUserId().'"><button type="button" class="edit"><span class="pencilart">u</span></button></a>'; //usuwanie
                         //złe zastosowanie, ale działa :)
                         $_SESSION['loginAbout'] = $user->getLogin();
