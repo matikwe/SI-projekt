@@ -12,10 +12,10 @@
 include 'topMenu.php';
 ?>
 
-<div class="content">
-<div class="header">
-    <h1>Chat</h1>
-</div>
+<div class="chatContent">
+    <div class="header">
+        <h1>Chat</h1>
+    </div>
     <div class="chatContainer">
         <img src="./userprofile.jpg" alt="Avatar">
         <p>Hello. How are you today?</p>

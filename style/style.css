@@ -457,6 +457,12 @@ option a {
     color: #DDDDDD;
 }
 
+.chatContent {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
 .chatContainer {
     background-image: linear-gradient(170deg, #393f46, #0a0b10);
     box-shadow: -1px 1px darkorange;
