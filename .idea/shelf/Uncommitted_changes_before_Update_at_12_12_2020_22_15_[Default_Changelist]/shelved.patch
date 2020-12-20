@@ -1,0 +1,18 @@
+Index: topMenu.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n?>\r\n\r\n<html lang=\"pl-PL\">\r\n<head>\r\n    <link rel=\"stylesheet\" href=\"./style/style.css\">\r\n    <title>Home</title>\r\n\r\n</head>\r\n\r\n<body>\r\n<div class=\"top-bar\">\r\n    <div class=\"logo\">\r\n        logo\r\n    </div>\r\n    <div class=\"menu\">\r\n\r\n        <div class=\"option\">O NAS</div>\r\n        <div class=\"option\">CZAT</div>\r\n        <div class=\"option\">KONTAKT</div>\r\n        <div class=\"option\"><a href=\"index.php?action=login\">LOGOWANIE</a></div>\r\n        <div class=\"option\">ARTYKUŁY</div>\r\n    </div>\r\n\r\n    <div class=\"search\">\r\n        szukaj\r\n    </div>\r\n</div>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/topMenu.php b/topMenu.php
+--- a/topMenu.php	(revision 486370f47f4f4b7c27ad4877d69a08eb70bb836f)
++++ b/topMenu.php	(date 1607436808212)
+@@ -27,4 +27,5 @@
+     </div>
+ </div>
+ </body>
+-</html>
+\ No newline at end of file
++</html>
++

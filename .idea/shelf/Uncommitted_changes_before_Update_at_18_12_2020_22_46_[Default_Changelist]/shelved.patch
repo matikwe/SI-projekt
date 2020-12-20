@@ -1,0 +1,19 @@
+Index: actions/contact.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n include 'Database.php';\r\n\r\n$_SESSION['error'] = \"\";\r\n$_SESSION['eFormatMail'] = \"\";\r\nif(isset($_POST['button'])){\r\n    if(empty($_POST['name']) || empty($_POST['surname']) || empty($_POST['mail']) || empty($_POST['info'])){\r\n        $_SESSION['error'] = \"Uzupełnij dane\";\r\n    }else{\r\n        $name = $_POST['name'];\r\n        $surname = $_POST['surname'];\r\n        $info = $_POST['info'];\r\n        if ((filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL))) {\r\n            $email = $_POST['mail'];\r\n            $database = new Database('blog');\r\n            $query = $database->getHandle()->query('SELECT count(*) FROM pytania WHERE email=\"'.$email.'\" AND czyKontakt=\"false\"');\r\n\r\n            if($query->fetchColumn() >=1){\r\n                $_SESSION['eFormatMail'] = \"Zaczekaj na kontakt z naszym konsultantem. Wysłałeś już zapytanie.\";\r\n            }else{\r\n                $count = $database->count('pytania')+1;\r\n                $addQuery = $database->getHandle()->query('INSERT INTO pytania (id_pytania, imie, nazwisko, email, tresc, czyKontakt) VALUES (\"' . $count . '\",\"'.$name.'\",\"' . $surname . '\",\"' . $email . '\",\"' . $info . '\",\"false\")');\r\n            }\r\n        }else{\r\n            $_SESSION['eFormatMail'] = \"Zły format maila\";\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/actions/contact.php b/actions/contact.php
+--- a/actions/contact.php	
++++ b/actions/contact.php	
+@@ -15,7 +15,7 @@
+             $database = new Database('blog');
+             $query = $database->getHandle()->query('SELECT count(*) FROM pytania WHERE email="'.$email.'" AND czyKontakt="false"');
+ 
+-            if($query->fetchColumn() >=1){
++            if($query->f etchColumn() >=1){
+                 $_SESSION['eFormatMail'] = "Zaczekaj na kontakt z naszym konsultantem. Wysłałeś już zapytanie.";
+             }else{
+                 $count = $database->count('pytania')+1;
