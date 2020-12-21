@@ -12,11 +12,11 @@ if(isset($_POST['action'])) {
 
     $i = 0;
     foreach ($query as $item){
-        $user = new User($item['user_id'], $item['login'], $item['password'], $item['email'], $item['role']);
-        $_SESSION['userDisplay'][$i] = serialize($user);
+        $chat = new Chat($item['id_message'], $item['message'], $item['date']);
+        $_SESSION['messagesDisplay'][$i] = serialize($chat);
         $i++;
     }
-    $_SESSION['countUserDisplay'] = $i;
+    $_SESSION['countMessagesDisplay'] = $i;
 
     if(empty($message)) {
         $_SESSION['emptyMessage'] = "Wprowadz wiadomosc";
