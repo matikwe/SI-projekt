@@ -24,7 +24,7 @@ include 'topMenu.php';
         <textarea name="info"><?php if(!empty($_POST['info'])) echo $_POST['info']; ?></textarea>
         <div id="error">
             <?php
-                if (!empty($_SESSION['error'])) {
+                if (!empty($_SESSION['error'])){
                     echo $_SESSION['error'];
                 }
                 if (!empty($_SESSION['eFormatMail'])) {
