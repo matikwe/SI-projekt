@@ -27,4 +27,13 @@ include 'topMenu.php';
         <p>Hey! I'm fine. Thanks for asking!</p>
         <span class="time-left">11:01</span>
     </div>
+
+    <div class="chatForm">
+        <form action="index.php?action=chat" method="POST">
+            <input type="text" placeholder="Wprowadz wiadomosc" name="message">
+            <input type="submit" value="Wyslij" class="submit" name="action">
+        </form>
+
+    </div>
+
 </div>
