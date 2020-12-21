@@ -458,10 +458,11 @@ option a {
 }
 
 .chatContent {
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
     max-width: 800px;
     padding: 0 20px;
-    height: calc(100% - 216px);
+    height: calc(80% - 245px);
+    overflow: auto;
 }
 
 .chatContainer {
@@ -474,6 +475,13 @@ option a {
 
 .chatContainer p {
     color: #aaa;
+}
+
+.chatForm {
+    margin: auto;
+    width: 800px;
+    padding: 10px;
+
 }
 
 .chatContainer::after {

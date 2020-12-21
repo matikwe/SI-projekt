@@ -11,29 +11,27 @@
 <?php
 include 'topMenu.php';
 ?>
-
+<div class="header">
+    <h1>Chat</h1>
+</div>
 <div class="chatContent">
-    <div class="header">
-        <h1>Chat</h1>
-    </div>
+    <?php
+    for ($i = 0; $i < $_SESSION['countMessagesDisplay']; $i++){
+    $chat = unserialize($_SESSION['messagesDisplay'][$i]);
+    ?>
     <div class="chatContainer">
         <img src="./userprofile.jpg" alt="Avatar">
-        <p>Hello. How are you today?</p>
-        <span class="time-right">11:00</span>
+        <p><?php echo $chat->getMessage();?></p>
+        <span class="time-right"><?php echo $chat->getDate();?></span>
     </div>
 
-    <div class="chatContainer darker">
-        <img src="./userprofile.jpg" alt="Avatar" class="right">
-        <p>Hey! I'm fine. Thanks for asking!</p>
-        <span class="time-left">11:01</span>
-    </div>
-
-    <div class="chatForm">
-        <form action="index.php?action=chat" method="POST">
-            <input type="text" placeholder="Wprowadz wiadomosc" name="message">
-            <input type="submit" value="Wyslij" class="submit" name="action">
-        </form>
-
-    </div>
-
+        <?php
+        }
+        ?>
+</div>
+<div class="chatForm">
+    <form action="index.php?action=chat" method="POST">
+        <input type="text" placeholder="Wprowadz wiadomosc" name="message">
+        <input type="submit" value="Wyslij" class="submit" name="action">
+    </form>
 </div>
