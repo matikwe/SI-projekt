@@ -15,6 +15,7 @@ if(isset($_POST['buttonLogin'])){
 
         foreach($query as $row){
             if(password_verify($_POST['password'], $row['password']) == true){
+                $_SESSION['currentUserID'] = $row['user_id'];
                 $_SESSION['currentLogin'] = $_POST['login'];
                 $_SESSION['currentRole'] = $row['role'];
                 header("Location: index.php?action=home");
