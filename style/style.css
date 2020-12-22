@@ -478,10 +478,21 @@ option a {
 }
 
 .chatForm {
-    margin: auto;
-    width: 800px;
+    margin: 2px auto;
+    width: 40%;
     padding: 10px;
+    border: 1px solid rgba(255,255,255,.1);
+    color: #FFF;
+    background: rgba(255,255,255,.5);
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+}
 
+.chatForm input:focus {
+    border: 1px solid rgba(255,255,255,.8);
+    outline: none;
 }
 
 .chatContainer::after {
