@@ -458,10 +458,11 @@ option a {
 }
 
 .chatContent {
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
     max-width: 800px;
     padding: 0 20px;
-    height: calc(100% - 216px);
+    height: calc(80% - 245px);
+    overflow: auto;
 }
 
 .chatContainer {
@@ -474,6 +475,24 @@ option a {
 
 .chatContainer p {
     color: #aaa;
+}
+
+.chatForm {
+    margin: 2px auto;
+    width: 40%;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,.1);
+    color: #FFF;
+    background: rgba(255,255,255,.5);
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+}
+
+.chatForm input:focus {
+    border: 1px solid rgba(255,255,255,.8);
+    outline: none;
 }
 
 .chatContainer::after {
