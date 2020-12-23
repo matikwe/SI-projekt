@@ -20,7 +20,6 @@ if(isset($_POST['action'])) {
     $message = $_POST ['message'];
 
 
-
     if(empty($message)) {
         $_SESSION['emptyMessage'] = "Wprowadz wiadomosc";
 

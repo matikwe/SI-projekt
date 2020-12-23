@@ -13,40 +13,47 @@ include 'topMenu.php';
 ?>
 
 <div id="chat-container">
-    <?php
-    for ($i = 0; $i < $_SESSION['countMessagesDisplay']; $i++){
-    $chat = unserialize($_SESSION['messagesDisplay'][$i]);
-    ?>
     <div id="online-list">
         Online List
     </div>
     <div id="chat-message-list">
+        <?php
+        for ($i = 0; $i < $_SESSION['countMessagesDisplay']; $i++){
+            $chat = unserialize($_SESSION['messagesDisplay'][$i]);
+            ?>
         <div class="message-row user-message">
             <div class="message-content">
-                <img src="https://i.pinimg.com/236x/21/87/a8/2187a85893e81c2f964f1c89ef559c4e.jpg" width="128px" alt="User Picture"/>
+                <img src="https://i.pinimg.com/236x/21/87/a8/2187a85893e81c2f964f1c89ef559c4e.jpg" width="64px" alt="User Picture"/>
                 <div class="user-name">Hentu</div>
                 <div class="message-text"><?php echo $chat->getMessage();?></div>
+                <div class="message-time"><?php echo $chat->getDate();?></div>
+            </div>
+        </div>
+        <?php
+        }
+        ?>
+        <div class="message-row user-message">
+            <div class="message-content">
+                <img src="https://i.pinimg.com/236x/21/87/a8/2187a85893e81c2f964f1c89ef559c4e.jpg" width="64px" alt="User Picture"/>
+                <div class="user-name">Hentu</div>
+                <div class="message-text">LOL</div>
                 <div class="message-time">16.04</div>
             </div>
         </div>
         <div class="message-row other-message">
             <div class="message-content">
-                <img src="https://i.pinimg.com/236x/21/87/a8/2187a85893e81c2f964f1c89ef559c4e.jpg" width="128px" alt="User Picture"/>
-                <div class="user-name">Hentu</div>
+                <img src="https://i.pinimg.com/236x/21/87/a8/2187a85893e81c2f964f1c89ef559c4e.jpg" width="64px" alt="User Picture"/>
+                <div class="user-name">WieluHentu</div>
                 <div class="message-text">Ok then</div>
                 <div class="message-time">16.04</div>
             </div>
         </div>
-
-
-
-
     </div>
-        <?php
-    }
-    ?>
+
     <div id="chat-form">
-        <input type="text" placeholder="Wprowadź wiadomość"/>
-        <img src="https://static.thenounproject.com/png/367821-200.png" width="51px" alt="Wyślij"/>
+        <form action="index.php?action=chat" method="POST">
+            <input type="text" placeholder="Wprowadź wiadomość" name="message"/>
+            <input type="image" src="https://static.thenounproject.com/png/367821-200.png" border="0" name="action" width="51px" alt="Wyślij"/>
+        </form>
     </div>
 </div>
