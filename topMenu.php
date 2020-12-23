@@ -11,7 +11,7 @@
         if(empty($_SESSION['currentLogin']))
             echo"<a href='index.php?action=login'><div class='option'>LOGOWANIE</div></a>";
         else {
-            echo"<a href='index.php?action=logout'><div class='option'>WYLOGUJ</div></a>";
+            echo"<a href='index.php?action=logout'><div class='option'>".$_SESSION['currentLogin']."</div></a>";
         }
         ?>
         <a href="index.php?action=about"><div class="option">O NAS</div></a>
