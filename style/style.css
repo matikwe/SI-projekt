@@ -18,7 +18,6 @@ body {
 
 .login .form {
     padding: 15px 20px;
-    /*height: ;*/
 }
 
 .login .form h2 {
@@ -330,7 +329,7 @@ option a {
 }
 
 .pageNF {
-    height: calc(100% - 276px);
+    min-height: calc(100% - 276px);
     text-align: center;
     color: #FFFFFF;
     margin-top: 100px;
