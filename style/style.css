@@ -1,3 +1,7 @@
+:root {
+    --orange: orange;
+}
+
 * {
     box-sizing: border-box;
     font-family: sans-serif;
@@ -337,7 +341,7 @@ option a {
 }
 
 .pageNF h1 {
-    color: orange;
+    color: var(--orange);
     margin: 100px;
 }
 
@@ -347,7 +351,7 @@ option a {
     background-color: #000000;
     padding: 20px;
     border-radius: 40px;
-    border: 1px solid orange;
+    border: 1px solid var(--orange);
     transition: 0.3s;
 }
 
