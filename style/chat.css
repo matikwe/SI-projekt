@@ -102,7 +102,7 @@ body {
     border-radius: 10px 0 0 10px;
 }
 
-#chat-form {
+#chat-form form{
     grid-area: chat-form;
     display: grid;
     grid-template-columns: 2fr 40px;
@@ -116,8 +116,11 @@ body {
     padding-right: 42px;
 }
 
-#chat-form input[type=image] {
+#chat-form input[type=submit] {
     cursor: pointer;
+/*ZROBIC NA FONTENELLO     background: url(https://static.thenounproject.com/png/367821-200.png); */
+    border: 0;
+
 }
 
 #chat-form input[type=text] {

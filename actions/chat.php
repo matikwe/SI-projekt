@@ -15,9 +15,12 @@ foreach ($query as $item){
 }
 $_SESSION['countMessagesDisplay'] = $i;
 
+
+
 if(isset($_POST['action'])) {
 
     $message = $_POST ['message'];
+    echo $message;
 
 
     if(empty($message)) {

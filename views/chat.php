@@ -52,8 +52,8 @@ include 'topMenu.php';
 
     <div id="chat-form">
         <form action="index.php?action=chat" method="POST">
-            <input type="text" placeholder="Wprowadź wiadomość" name="message"/>
-            <input type="image" src="https://static.thenounproject.com/png/367821-200.png" border="0" name="action" width="51px" alt="Wyślij"/>
+            <input type="text" placeholder="Wprowadź wiadomość" name="message">
+            <input type="submit" class="submit" name="action">
         </form>
     </div>
 </div>
