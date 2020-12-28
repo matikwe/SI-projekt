@@ -9,7 +9,7 @@
     <div class="form">
         <form action="index.php?action=addPost" method="post">
             <h3>Dodaj artykuł</h3><br>
-            <textarea name="post" placeholder="Wpisz treść artykułu"></textarea>
+            <textarea name="post" placeholder="Wpisz treść artykułu" value="<?php if(!empty($_POST['post']))echo $_POST['post']?>"></textarea>
             <input type="text" placeholder="Wpisz tytuł" name="title">
             <input type="text" placeholder="Wklej link do zdjęcia" name="url">
             <div id="error">

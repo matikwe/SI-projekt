@@ -2,6 +2,7 @@
 include 'Database.php';
 $_SESSION['errorPost'] = "";
 $_SESSION['errorUrl'] = "";
+$_SESSION['errorTitle'] = "";
 $validation = true;
 if(isset($_POST['addPost'])){
 
@@ -29,5 +30,6 @@ if(isset($_POST['addPost'])){
        $count = $database->count('artykul')+1;
        $login = $_SESSION['currentLogin'];
        $query = $database->getHandle()->query('INSERT INTO artykul(id_artykulu, tresc, autor, zdjecie, akceptacja_admina) VALUES ("' . $count . '","'.$title.'","' . $post . '","' . $login . '","' . $url . '","false")');
+       header("Location: index.php?action=userPanel");
     }
 }

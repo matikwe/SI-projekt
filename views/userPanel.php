@@ -13,6 +13,7 @@ include 'topMenu.php';
 
 <div class="pageNF">
     <h1>Panel admina</h1>
-    <a href="index.php?action=about-do panelu">Modyfikacja danych użytkownika</a>
+    <a href="index.php?action=addPost">Dodaj post</a>
+    <a href="index.php?action=userList">Modyfikacja danych użytkownika</a>
     <a href="index.php?action=logout">Wyloguj</a>
 </div>
