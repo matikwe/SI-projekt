@@ -9,14 +9,16 @@ $_SESSION['eFormatMail'] = "";
 
 if(!empty($_GET['name'])) {
     $database = new Database('blog');
-    $query = $database->getHandle()->query("SELECT * FROM user");
+    //$query = $database->getHandle()->query("SELECT * FROM user");
     if ($_GET['name'] == "delete") {
-        $delete = $database->getHandle()->query('DELETE FROM user WHERE user_id=' . $_GET['id'] . ';');
-        $count = $database->count('user');
+        //$id = $_GET['id'];
+        $delete = $database->getHandle()->query('DELETE FROM user WHERE user_id=2');
+        /*$count = $database->count('user');
         for ($i = $_GET['id']; $i <= $count; $i++) {
             $update = $database->getHandle()->query('UPDATE user SET user_id="' . $i . '" WHERE user_id="' . ($i + 1) . '"');
         }
-        header("Location: index.php?action=about");
+        //header("Location: index.php?action=about");*/
+        echo "usuneło";
     }
 
 

@@ -8,14 +8,43 @@ class User {
     private $password;
     private $email;
     private $role;
+    private $description;
 
-    public function __construct($user_id, $login, $password, $email, $role){
+    /**
+     * User constructor.
+     * @param $user_id
+     * @param $login
+     * @param $password
+     * @param $email
+     * @param $role
+     * @param $description
+     */
+    public function __construct($user_id, $login, $password, $email, $role, $description)
+    {
         $this->user_id = $user_id;
         $this->login = $login;
         $this->password = $password;
         $this->email = $email;
         $this->role = $role;
+        $this->description = $description;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param mixed $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
 
     /**
      * @return mixed

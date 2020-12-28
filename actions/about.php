@@ -4,8 +4,8 @@ include 'User.php';
 
 $data = new Database('blog');
 
-$data->count('user');
-$query = $data->getHandle()->query('SELECT * FROM user');
+//$data->count('user');
+$query = $data->getHandle()->query('SELECT * FROM user WHERE role IN("admin","redaktor")');
 
 
 
@@ -19,10 +19,10 @@ for ($i = 0; $row = $query->fetch(); $i++){
 */
 //$_SESSION['w'] = $i;
 
-//lepsze rozwiązanie
+//pobranie userów z bazy
 $i = 0;
 foreach ($query as $item){
-    $user = new User($item['user_id'], $item['login'], $item['password'], $item['email'], $item['role']);
+    $user = new User($item['user_id'], $item['login'], $item['password'], $item['email'], $item['role'], $item['opis']);
     $_SESSION['userDisplay'][$i] = serialize($user);
     $i++;
 }
