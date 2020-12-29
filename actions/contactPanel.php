@@ -14,3 +14,9 @@ foreach ($query as $item){
     $i++;
 }
 $_SESSION['countContactDisplay'] = $i;
+
+if(isset($_POST['contact'])){
+    $contactID = $_GET['contactID'];
+    $data->getHandle()->query('UPDATE pytania SET czyKontakt="true" WHERE id_pytania='.$contactID);
+    header('Location: index.php?action=contactPanel');
+}
