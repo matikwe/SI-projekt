@@ -5,6 +5,9 @@
     <title>Dodaj artykuł</title>
 </head>
 <body>
+<?php
+include 'topMenu.php';
+?>
 <div class="mail">
     <div class="form">
         <form action="index.php?action=addPost" method="post">

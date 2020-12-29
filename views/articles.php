@@ -7,38 +7,41 @@
 <body>
 <?php
 include 'topMenu.php';
+if(empty($_GET['name']))
+{
 ?>
 <div class="articles">
     <?php
     for($i = $_SESSION['countArticles']-1; $i >= 0; $i--){
         $article = unserialize($_SESSION['articles'][$i]);
         ?>
+
             <article>
                 <h1><?php echo $article->getTitle();?></h1>
                 <p><img src="<?php echo $article->getImg();?>"/>
-                <?php echo substr($article->getContents(),0,600).'...';?></p>
-                <h4><a href="index.php?action=articles&name=currentPost&postID=<?php echo $article->getIdArticle()?>">Czytaj więcej</a></h4>
+                <?php echo substr($article->getContents(),0,500).'...';?></p>
+                <h4><a href="index.php?action=articles&name=currentPost&postID=<?php echo $article->getIdArticle()?>&number=<?php echo $i?>">Czytaj więcej</a></h4>
                 <h5>Autor: <?php echo $article->getAuthor();?></h5>
             </article>
+
     <?php
-    }
-    ?>
+    }?>
 </div>
-    <!-- akcaptacja artykulu do ogarniecia w menu/ lub przycisk ?!-->
-    <!--
-    <br><br><br>
-
-    <article id="post-1" class="thumbnail"">
-    <div class="entry-thumbnail">
-        <img width="200" height="200" src="./sample.jpg"  </img>
-        <div class="entry-meta">
-            <span class="posted-on"><a href="" rel="bookmark"><time datetime="">11/12/2020</time><time  datetime="2020-12-11T20:45:04+01:00">13/12/2020</time></a></span>
-        </div>
-        <h1 class="entry-title"><a  rel="bookmark">Article</a></h1>	</header>
+<?php
+}else
+{
+    $number = $_GET['number'];
+    $article = unserialize($_SESSION['articles'][$number]);
+?>
+    <div class="currentArticle">
+        <article>
+            <h1><?php echo $article->getTitle();?></h1>
+            <p><img src="<?php echo $article->getImg();?>"/>
+                <?php echo $article->getContents();?></p>
+            <!--<h4><a href="index.php?action=articles&name=currentPost&postID=<?php echo $article->getIdArticle()?>&number=<?php echo $i?>">Czytaj więcej</a></h4>-->
+            <h5>Autor: <?php echo $article->getAuthor();?></h5>
+        </article>
     </div>
-
-    <a href="" class="entry-link"><span class="screen-reader-text">Czytaj dalej <span class="meta-nav">&rarr;</span></span></a>
-
-    </article>
-    -->
-
+<?php
+}
+?>
