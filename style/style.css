@@ -256,8 +256,9 @@ option a {
 
 h1 {
     text-align: center;
-    color: #FFF;
-    font-size: 30px;
+    color: var(--orange);
+    margin: 10px;
+    font-size: 65px;
     text-shadow: 2px 2px black;
 }
 
@@ -285,11 +286,6 @@ h1 {
 
 }
 
-.text h1 {
-    font-size: 33px;
-    margin-left: 40px;
-}
-
 .text p {
     max-width: 90%;
     font-size: 15px;
@@ -314,10 +310,6 @@ h1 {
     .user {
         min-height: 480px;
     }
-    .text h1 {
-        text-align: center;
-        margin-left: 0px;
-    }
     .icon, .icon img {
         text-align: center;
     }
@@ -336,11 +328,6 @@ h1 {
     color: #FFFFFF;
     margin-top: 100px;
     clear: both;
-}
-
-.pageNF h1 {
-    color: var(--orange);
-    margin: 100px;
 }
 
 .pageNF a {
