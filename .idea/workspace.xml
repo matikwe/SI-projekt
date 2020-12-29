@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e37f593-768a-47bd-8d29-c5ab5073ef6e" name="Default Changelist" comment="userPanel-AddPost--&gt;finish">
-      <change afterPath="$PROJECT_DIR$/style/contactPanel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_2020_12_53__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_2020_12_53__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2020_22_15__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2020_22_15__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_12_2020_22_46__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_12_2020_22_46__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="8e37f593-768a-47bd-8d29-c5ab5073ef6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/ContactClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/contactPanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/contactPanel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/userModification.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/userModification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/contactPanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/contactPanel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/userList.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/userList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/userModification.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/userModification.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/topMenu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/userPanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/userPanel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,13 +14,6 @@
   </component>
   <component name="ComposerSettings">
     <execution />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -41,10 +25,6 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0.0" />
   <component name="ProjectId" id="1lFAuawQPU1U70dPL1EUZTNnw1p" />
-  <component name="ProjectLevelVcsManager">
-    <OptionsSetting value="false" id="Update" />
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -56,7 +36,6 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Documents/zampp/htdocs/index.php" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -195,14 +174,7 @@
       <option name="project" value="LOCAL" />
       <updated>1608693120133</updated>
     </task>
-    <task id="LOCAL-00015" summary="userPanel-AddPost--&gt;finish">
-      <created>1609239057909</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1609239057909</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,8 +196,7 @@
     <MESSAGE value="Mam rozmieszczenie, ale wszystko mi się jeszcze rozjeżdża, próbuję robić dalej" />
     <MESSAGE value="Ola" />
     <MESSAGE value="KK" />
-    <MESSAGE value="userPanel-AddPost--&gt;finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="userPanel-AddPost--&gt;finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="KK" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

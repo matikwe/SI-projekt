@@ -6,7 +6,6 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif;
-    display: block;
     color: #dddddd;
 }
 
@@ -531,4 +530,8 @@ article h5{
 .currentArticle article{
     width: 80%;
     margin-left: 10%;
+}
+
+b {
+    display: inline;
 }
