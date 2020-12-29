@@ -1,6 +1,6 @@
 <nav>
     <div class="logo">
-        LOGO
+        <!--proszę dodać możliwość kontaktu-->LOGO
     </div>
     <div class="menu">
 
