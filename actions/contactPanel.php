@@ -1,16 +1,16 @@
 <?php
 include 'Database.php';
-include 'User.php';
+include 'ContactClass.php';
 
 $data = new Database('blog');
 
-$data->count('contact');
-$query = $data->getHandle()->query('SELECT * FROM pytania');
+$data->count('pytania');
+$query = $data->getHandle()->query('SELECT * FROM pytania WHERE czyKontakt="false"');
 
 $i = 0;
 foreach ($query as $item){
-    $contact = new Contact ($item['questionId'], $item['name'], $item['surname'], $item['email'], $item['contents'], $item['contact']);
-    $_SESSION['userDisplay'][$i] = serialize($contact);
+    $contact = new ContactClass ($item['id_pytania'], $item['imie'], $item['nazwisko'], $item['email'], $item['tresc'], $item['czyKontakt']);
+    $_SESSION['contactDisplay'][$i] = serialize($contact);
     $i++;
 }
 $_SESSION['countContactDisplay'] = $i;

@@ -31,7 +31,7 @@ include 'topMenu.php';
                 if(!empty($_SESSION['currentRole'])){
                     if($_SESSION['currentRole'] == 'admin'){
                         echo '<a href="index.php?action=userModification&id='.$user->getUserId().'"><button type="button" class="edit"><span class="pencilart">e</span></button></a>'; //edycja
-                        echo '<a href="index.php?action=userModification&name=delete"><button type="button" class="edit"><span class="pencilart">u</span></button></a>'; //usuwanie
+                        //dopracowac usuwanie//echo '<a href="index.php?action=userDelete&name=delete&id='.$user->getUserId().'"><button type="button" class="edit"><span class="pencilart">u</span></button></a>'; //usuwanie
                         //złe zastosowanie, ale działa :)
                         $_SESSION['loginAbout'] = $user->getLogin();
                         $_SESSION['emailAbout'] = $user->getEmail();
@@ -39,23 +39,17 @@ include 'topMenu.php';
                 }
                 ?>
 
-                <h1><?php echo $user->getLogin();?>
+                <h1><?php echo '#'.$user->getUserId().' --> '.'Login: '.$user->getLogin();?>
                 </h1>
-                <p><?php echo $user->getLogin();?>
+                <p><?php echo 'Mail: '.$user->getEmail();?>
+                </p>
+                <p><?php echo 'Rola: '.$user->getRole();?>
                 </p>
             </div>
         </div>
         <?php
         }
         ?>
-        <div class="user">
-            <div class="icon">
-                <img src="./userprofile.jpg" alt="User Profile">
-            </div>
-            <div class="text">
-                <h1>Kuźmicki Kamil</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non ligula a neque blandit dignissim. Proin hendrerit et ipsum fringilla porta. Donec vel diam sit amet tellus pulvinar iaculis.</p>
-            </div>
-        </div>
+
     </div>
 </div>

@@ -1,5 +1,5 @@
 <?php
-class Contact
+class ContactClass
 {
     private $questionId;
     private $name;
@@ -9,7 +9,7 @@ class Contact
     private $contact;
 
     /**
-     * Contact constructor.
+     * ContactClass constructor.
      * @param $questionId
      * @param $name
      * @param $surname
