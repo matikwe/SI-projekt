@@ -11,36 +11,34 @@
 include 'topMenu.php';
 ?>
 
-<div class="container">
+<h1>Kim jesteśmy?</h1>
 
-    <div class="header">
-        <h1>Kim jesteśmy?</h1>
-    </div>
+<div class="container">
 
     <div class="content">
         <?php
-        for ($i = 0; $i < $_SESSION['countUserDisplay']; $i++){
+        for ($i = 0; $i < $_SESSION['countUserDisplay']; $i++) {
             $user = unserialize($_SESSION['userDisplay'][$i]);
-        ?>
-        <div class="user">
-            <div class="icon">
-                <img src="./userprofile.jpg" alt="User Profile">
-            </div>
-            <div class="text">
-                <?php
-                if(!empty($_SESSION['currentRole'])){
-                    if($_SESSION['currentRole'] == 'admin'){
-                        echo '<a href="index.php?action=descriptionModification&id='.$user->getUserId().'"><button type="button" class="edit"><span class="pencilart">e</span></button></a>';
+            ?>
+            <div class="user">
+                <div class="icon">
+                    <img src="./userprofile.jpg" alt="User Profile">
+                </div>
+                <div class="text">
+                    <?php
+                    if (!empty($_SESSION['currentRole'])) {
+                        if ($_SESSION['currentRole'] == 'admin') {
+                            echo '<a href="index.php?action=descriptionModification&id=' . $user->getUserId() . '"><button type="button" class="edit"><span class="pencilart">e</span></button></a>';
+                        }
                     }
-                }
-                ?>
+                    ?>
 
-                <h1><?php echo $user->getLogin();?></h1>
-                <p><?php echo "Rola: ".$user->getRole(); ?></p>
-                <p><?php echo $user->getDescription() ;?></p>
+                    <h1><?php echo $user->getLogin(); ?></h1>
+                    <p><?php echo "Rola: " . $user->getRole(); ?></p>
+                    <p><?php echo $user->getDescription(); ?></p>
+                </div>
             </div>
-        </div>
-        <?php
+            <?php
         }
         ?>
         <div class="user">
@@ -49,7 +47,9 @@ include 'topMenu.php';
             </div>
             <div class="text">
                 <h1>Kuźmicki Kamil</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non ligula a neque blandit dignissim. Proin hendrerit et ipsum fringilla porta. Donec vel diam sit amet tellus pulvinar iaculis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non ligula a neque blandit
+                    dignissim. Proin hendrerit et ipsum fringilla porta. Donec vel diam sit amet tellus pulvinar
+                    iaculis.</p>
             </div>
         </div>
     </div>

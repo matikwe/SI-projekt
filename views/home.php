@@ -5,13 +5,14 @@
     <title>Strona główna</title>
 </head>
 <body>
+
 <?php
 include 'topMenu.php';
 ?>
-<div class="home">
 
-    <br><br><br><br>
-    <h3>Strona Główna</h3>
+<h1>Strona główna</h1>
+
+<div class="home">
     <div class="ad1">
         Reklama
     </div>

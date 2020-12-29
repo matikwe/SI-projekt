@@ -11,11 +11,11 @@
 include 'topMenu.php';
 ?>
 
+<h1>Modyfikacja</h1>
+
 <div class="container">
 
-    <div class="header">
-        <h1>Modyfikacja</h1>
-    </div>
+
 
     <div class="content">
         <?php

@@ -8,16 +8,13 @@
 <?php
 include 'topMenu.php';
 ?>
-<div class="headercontact">
-    <br><br><br><br><br>
-    <h1>ZAWSZE CHĘTNIE ODPOWIEMY NA TWOJE PYTANIA </h1>
-    <br><br><br>
-</div>
+
+<h1>Kontakt</h1>
+
 </div>
 <div class="mail">
     <div class="form">
     <form action="index.php?action=contact" method="post">
-        <h3>NAPISZ DO NAS</h3><br>
         <input type="text" placeholder="Imię" id="name" name="name" value="<?php if(!empty($_POST['name'])) echo $_POST['name']; ?>"><br><br>
         <input type="text" placeholder="Nazwisko" id="surname" name="surname" value="<?php if(!empty($_POST['surname'])) echo $_POST['surname']; ?>"><br><br>
         <input type="text" placeholder="Mail" id="mail" name="mail" value="<?php if(!empty($_POST['mail'])) echo $_POST['mail']; ?>"><br><br>

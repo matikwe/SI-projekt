@@ -5,12 +5,15 @@
     <title>Rejestracja</title>
 </head>
 <body>
+
 <?php
 include 'topMenu.php';
 ?>
+
+<h1>Rejestracja</h1>
+
     <div class="login">
         <div class="form">
-            <h2>Rejestracja</h2>
             <form action="index.php?action=registration" method="POST">
                 <label>
                     <input type="text" placeholder="Wpisz login" name="login" value="<?php if(!empty($_POST['login'])) echo $_POST['login']; ?>">

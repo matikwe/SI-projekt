@@ -5,12 +5,15 @@
     <title>Wyniki wyszukiwania</title>
 </head>
 <body>
+
 <?php
 include 'topMenu.php';
 ?>
 
+<?php
+echo '<h1>Wyniki wyszukiwania dla: <i>'.$searchField.'</i></h1>';
+?>
+
 <div class="pageNF">
-    <?php
-    echo '<h1>Wyniki wyszukiwania dla: <i>'.$searchField.'</i></h1>';
-    ?>
+
 </div>

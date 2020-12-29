@@ -8,9 +8,9 @@
     <?php
     include 'topMenu.php';
     ?>
+    <h1>Login</h1>
         <div class="login">
             <div class="form">
-                <h2>Login</h2>
                 <form action="index.php?action=login" method="POST">
                     <label>
                         <input type="text" placeholder="Login" name="login" value="<?php if(!empty($_POST['login'])) echo $_POST['login']; ?>">

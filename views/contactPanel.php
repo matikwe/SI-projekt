@@ -10,10 +10,7 @@
 
 <?php
 include 'topMenu.php';
-
 ?>
-
-
 
     <div class="tableContact">
             <table border="1">
@@ -30,7 +27,6 @@ include 'topMenu.php';
                             echo '</form>';
                         }
                     ?>
-
             </table>
     </div>
 

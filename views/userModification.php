@@ -6,8 +6,10 @@
 </head>
 <body>
 <?php
-    include "topMenu.php";
-    ?>
+include "topMenu.php";
+?>
+
+<h1>Modyfikacja użytkownika</h1>
 
     <div class="login">
         <div class="form">

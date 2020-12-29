@@ -12,13 +12,15 @@
 include 'topMenu.php';
 ?>
 
+<h1>Online czat</h1>
+
 <div id="chat-container">
     <div id="online-list">
         Online List
     </div>
     <div id="chat-message-list">
         <?php
-        for ($i = 0; $i < $_SESSION['countMessagesDisplay']; $i++){
+        for ($i = $_SESSION['countMessagesDisplay']-1; $i >= 0; $i--){
             $chat = unserialize($_SESSION['messagesDisplay'][$i]);
             ?>
         <div class="message-row user-message">
