@@ -16,8 +16,9 @@ include 'topMenu.php';
             <article>
                 <h1><?php echo $article->getTitle();?></h1>
                 <p><img src="<?php echo $article->getImg();?>"/>
-                <?php echo $article->getContents();?></p>
+                <?php echo substr($article->getContents(),0,1000).'...';?></p>
                 <h4><a href="index.php?action=articles">Czytaj więcej</a></h4>
+                <h5>Autor: <?php echo $article->getAuthor();?></h5>
             </article>
     <?php
     }

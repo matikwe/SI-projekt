@@ -488,15 +488,29 @@ article p img{
     margin-right: 10px;
 }
 
-article p{
-
+article h1{
+    color: coral;
+    font-size: 35px;
 }
 
+article h4 a{
+    color: chartreuse;
+}
+
+article h5{
+    float: right;
+    margin-right: 10px;
+}
 
 @media only screen and (max-width: 900px) {
     article {
         width: 90%;
         margin-left: 5%;
         display: block;
+    }
+    article h5{
+        float: none;
+        text-align: right;
+        margin-right: 10px;
     }
 }
