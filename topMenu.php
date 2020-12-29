@@ -19,7 +19,7 @@
 
     <div class="search">
         <form action="index.php?action=searchResults" method="POST">
-            <input type="text" placeholder="Wyszukaj..." name="searchField">
+            <input type="text" placeholder="Wyszukaj..." name="searchField" style="width: 80%;">
             <button type="submit"><i class="icon-search"></i></button>
         </form>
     </div>

@@ -4,6 +4,8 @@
     <list default="true" id="8e37f593-768a-47bd-8d29-c5ab5073ef6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/topMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/userPanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/userPanel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +71,10 @@
       <workItem from="1608327963856" duration="4894000" />
       <workItem from="1608546541000" duration="551000" />
       <workItem from="1608590954416" duration="397000" />
-      <workItem from="1608688529184" duration="3617000" />
+      <workItem from="1608688529184" duration="3699000" />
+      <workItem from="1608761575575" duration="2343000" />
+      <workItem from="1608812085943" duration="201000" />
+      <workItem from="1609182527771" duration="3752000" />
     </task>
     <task id="LOCAL-00001" summary="Mam rozmieszczenie, ale wszystko mi się jeszcze rozjeżdża, próbuję robić dalej">
       <created>1607207122888</created>
@@ -162,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608692336422</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="KK">
+      <created>1608693120133</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608693120133</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
