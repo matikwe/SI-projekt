@@ -513,4 +513,10 @@ article h5{
         text-align: right;
         margin-right: 10px;
     }
+
+    article p img{
+        width: 130px;
+        height: 200px;
+        float: left;
+    }
 }

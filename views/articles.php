@@ -10,19 +10,20 @@ include 'topMenu.php';
 ?>
 <div class="articles">
     <?php
-    for($i = 0; $i < $_SESSION['countArticles']; $i++){
+    for($i = $_SESSION['countArticles']-1; $i >= 0; $i--){
         $article = unserialize($_SESSION['articles'][$i]);
         ?>
             <article>
                 <h1><?php echo $article->getTitle();?></h1>
                 <p><img src="<?php echo $article->getImg();?>"/>
-                <?php echo substr($article->getContents(),0,1000).'...';?></p>
-                <h4><a href="index.php?action=articles">Czytaj więcej</a></h4>
+                <?php echo substr($article->getContents(),0,600).'...';?></p>
+                <h4><a href="index.php?action=articles&name=currentPost&postID=<?php echo $article->getIdArticle()?>">Czytaj więcej</a></h4>
                 <h5>Autor: <?php echo $article->getAuthor();?></h5>
             </article>
     <?php
     }
     ?>
+</div>
     <!-- akcaptacja artykulu do ogarniecia w menu/ lub przycisk ?!-->
     <!--
     <br><br><br>
@@ -41,4 +42,3 @@ include 'topMenu.php';
     </article>
     -->
 
-</div>
