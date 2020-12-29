@@ -9,7 +9,7 @@
     include "topMenu.php";
     ?>
 
-    <div class="login">
+    <div class="mail">
         <div class="form">
         <form action="index.php?action=descriptionModification&id=<?php echo $_GET['id']?>" method="POST">
             <label>

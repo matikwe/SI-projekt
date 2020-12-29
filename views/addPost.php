@@ -26,6 +26,10 @@ include 'topMenu.php';
                     if(!empty($_SESSION['errorTitle'])){
                         echo $_SESSION['errorTitle'];
                     }
+
+                    if(!empty($_SESSION['errorExtension'])){
+                        echo $_SESSION['errorExtension'];
+                    }
                 ?>
             </div>
             <input type="submit" class="submit" name="addPost" value="Dodaj artykuł" />

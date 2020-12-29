@@ -3,6 +3,7 @@ include 'Database.php';
 $_SESSION['errorPost'] = "";
 $_SESSION['errorUrl'] = "";
 $_SESSION['errorTitle'] = "";
+$_SESSION['errorExtension'] = "";
 $validation = true;
 if(isset($_POST['addPost'])){
 
@@ -13,6 +14,14 @@ if(isset($_POST['addPost'])){
     if(empty($_POST['url'])){
         $_SESSION['errorUrl'] = "Wpisz link do zdjęcia.";
         $validation = false;
+    }else{
+        $extension = substr($_POST['url'],strlen($_POST['url'])-3,3);
+        if($extension == "gif" || $extension == "jpg" || $extension == "png"){
+
+        }else{
+            $_SESSION['errorExtension'] = "Wklej linka z rozszerzeniem jpg, gif lub png";
+            $validation = false;
+        }
     }
     if(empty($_POST['title'])){
         $_SESSION['errorTitle'] = "Wpisz tytuł.";
