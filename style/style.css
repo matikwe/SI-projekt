@@ -472,4 +472,31 @@ option a {
     color: #919191;
 }
 
+article{
+    border: 1px solid rgba(255,255,255,.8);
+    width: 45%;
+    display: inline-block;
+    margin: 10px 0px 0px 2%;
+    padding: 10px;
+    color: #eeeeee;
+}
 
+article p img{
+    width: 200px;
+    height: 300px;
+    float: left;
+    margin-right: 10px;
+}
+
+article p{
+
+}
+a
+
+@media only screen and (max-width: 800px) {
+    article {
+        width: 90%;
+        margin-left: 5%;
+        display: block;
+    }
+}

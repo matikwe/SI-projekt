@@ -9,18 +9,21 @@
 include 'topMenu.php';
 ?>
 <div class="articles">
-    <p>Tak to powinno wyglądać !!! Proszę dopracować CSS</p>
     <?php
     for($i = 0; $i < $_SESSION['countArticles']; $i++){
         $article = unserialize($_SESSION['articles'][$i]);
-        //przykład pobrania danych
-        //tak samo można się odwołać dla każdej wartości
-        //dokładne info w klasie Article
-        echo '<img src="'.$article->getImg().'"/>';
+        ?>
+            <article>
+                <h1><?php echo $article->getTitle();?></h1>
+                <p><img src="<?php echo $article->getImg();?>"/>
+                <?php echo $article->getContents();?></p>
+                <h4><a href="index.php?action=articles">Czytaj więcej</a></h4>
+            </article>
+    <?php
     }
     ?>
     <!-- akcaptacja artykulu do ogarniecia w menu/ lub przycisk ?!-->
-
+    <!--
     <br><br><br>
 
     <article id="post-1" class="thumbnail"">
@@ -33,7 +36,8 @@ include 'topMenu.php';
     </div>
 
     <a href="" class="entry-link"><span class="screen-reader-text">Czytaj dalej <span class="meta-nav">&rarr;</span></span></a>
-    </article>
 
+    </article>
+    -->
 
 </div>

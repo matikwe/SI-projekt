@@ -17,7 +17,7 @@ class Article
      * @param $img
      * @param $adminAccept
      */
-    public function __construct($id_article, $contents, $title, $author, $img, $adminAccept)
+    public function __construct($id_article, $title,$contents, $author, $img, $adminAccept)
     {
         $this->id_article = $id_article;
         $this->contents = $contents;
