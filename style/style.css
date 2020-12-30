@@ -50,6 +50,21 @@ main .test2 input {
     transition: 0.3s;
 }
 
+main .test2 textarea {
+    width: 20%;
+    height: 200px;
+    background: #000000;
+    border-radius: 20px;
+    border: 1px solid var(--orange);
+    padding: 15px;
+    color: #FFF;
+    font-size: 14px;
+    display: block;
+    margin-left: 40%;
+    margin-bottom: 1%;
+    transition: 0.3s;
+}
+
 main .test input:focus {
     border: 1px solid rgba(255,255,255,.8);
     outline: none;
@@ -434,19 +449,19 @@ h1 {
     height: 87%;
 }
 
-/*.mail .form input {*/
-/*    width: 40%;*/
-/*    height: 40px;*/
-/*    background: rgba(255,255,255,.5);*/
-/*    border: 1px solid rgba(255,255,255,.1);*/
-/*    padding: 0 15px;*/
-/*    color: #FFF;*/
-/*    border-radius: 15px;*/
-/*    font-size: 14px;*/
-/*    display: block;*/
-/*    margin-left: 30%;*/
-/*    margin-bottom: 1%;*/
-/*}*/
+.mail .form input {
+    width: 40%;
+    height: 40px;
+    background: rgba(255,255,255,.5);
+    border: 1px solid rgba(255,255,255,.1);
+    padding: 0 15px;
+    color: #FFF;
+    border-radius: 15px;
+    font-size: 14px;
+    display: block;
+    margin-left: 30%;
+    margin-bottom: 1%;
+}
 
 .mail .form textarea {
     width: 40%;
