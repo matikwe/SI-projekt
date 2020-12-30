@@ -12,7 +12,7 @@ include 'topMenu.php';
 <h1>Login</h1>
 
 <main>
-    <form action="index.php?action=login" method="POST">
+    <form action="index.php?action=login" class="test2" method="POST">
         <input type="text" placeholder="Login" name="login" value="<?php if(!empty($_POST['login'])) echo $_POST['login']; ?>">
         <input type="password" placeholder="Hasło" name="password">
         <div id="error">
