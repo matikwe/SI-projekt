@@ -21,11 +21,10 @@ body {
 
 #chat-container {
     display: grid;
-    grid-template-columns: 0.25fr 1.75fr;
     grid-template-rows: 1.90fr 0.10fr;
     grid-template-areas:
-		"online-list chat-message-list"
-		"online-list chat-form";
+		"chat-message-list"
+		"chat-form";
     grid-gap: 0.1rem;
     min-width: 800px;
     max-width: 1800px;
@@ -96,12 +95,6 @@ body {
     border-radius: 15px;
 }
 
-#online-list {
-    background: black;
-    grid-area: online-list;
-    border-radius: 10px 0 0 10px;
-}
-
 #chat-form form{
     grid-area: chat-form;
     display: grid;
@@ -109,7 +102,7 @@ body {
     align-content: center;
     align-items: center;
     grid-gap: 15px;
-    background: #eee;
+    background: orange;
     border-radius: 0 0 10px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.25);
     padding-left: 22px;
