@@ -537,3 +537,7 @@ article h5{
     width: 80%;
     margin-left: 10%;
 }
+
+textarea {
+    resize: none;
+}
