@@ -23,7 +23,7 @@ include 'topMenu.php';
                 }
                 if (!empty($_SESSION['eFormatMail'])) {
                     echo $_SESSION['eFormatMail'];
-                }
+                } // ?
             ?>
         </div>
         <input type="submit" class="submit" name="button" value="Wyślij" />
