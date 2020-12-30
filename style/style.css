@@ -22,20 +22,7 @@ body {
     height: calc(100% - 176px)
 }
 
-.login .form {
-    padding: 15px 20px;
-}
-
-.login .form h2 {
-    color: #FFF;
-    text-align: center;
-    font-size: 70px;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    font-weight: bold;
-}
-
-.login .form input {
+main input {
     width: 40%;
     height: 40px;
     background: rgba(255,255,255,.5);
@@ -49,7 +36,7 @@ body {
     margin-bottom: 1%;
 }
 
-.login .form input:focus {
+main input:focus {
     border: 1px solid rgba(255,255,255,.8);
     outline: none;
 }
@@ -58,7 +45,7 @@ body {
     color: #DDD;
 }
 
-.login .form input.submit {
+main input.submit {
     background: rgba(255,255,255,.9);
     color: #444;
     font-size: 15px;
@@ -66,7 +53,7 @@ body {
     font-weight: bold;
 }
 
-.login .form input.submit:hover {
+main input.submit:hover {
     background-color: darkgrey; /* zmiana koloru */
 }
 
@@ -154,7 +141,7 @@ nav {
 .articles {
     border-radius: 3px;
     text-align: center;
-    height: calc(100% - 176px)
+    height: 1000px;
 }
 
 .article {
@@ -198,6 +185,7 @@ footer a {
     min-height: 100px;
     transition: 0.3s;
 }
+
 .home {
     border-radius: 3px;
     text-align: center;
@@ -323,7 +311,7 @@ h1 {
 }
 
 .pageNF {
-    min-height: calc(100% - 276px);
+    min-height: calc(100% - 276px - 85px);
     text-align: center;
     color: #FFFFFF;
     margin-top: 100px;
