@@ -56,7 +56,7 @@ if(isset($_POST['action'])) {
             }
 
             $sameLogin = $database->getHandle()->query('SELECT count(user_id) FROM user WHERE login = "'.$login.'"');
-            if($sameLogin->fetchColumn() >= 1){
+            if($sameLogin->fetchColumn() >= 1) {
                 $addDB = false;
                 $_SESSION['eLoginDB'] = "Użytkownik o podanym loginie istnieje";
             }
