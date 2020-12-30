@@ -22,34 +22,31 @@ include 'topMenu.php';
         <?php
         for ($i = $_SESSION['countMessagesDisplay']-1; $i >= 0; $i--){
             $chat = unserialize($_SESSION['messagesDisplay'][$i]);
+                if (!empty($_SESSION['currentLogin']) && $chat->getUserId() == $_SESSION['currentUserID']) {
+                ?>
+                <div class="message-row user-message">
+                    <div class="message-content">
+                        <img src="https://i.pinimg.com/236x/21/87/a8/2187a85893e81c2f964f1c89ef559c4e.jpg" width="64px" alt="User Picture"/>
+                        <div class="user-name"><?php echo $chat->getLogin();?></div>
+                        <div class="message-text"><?php echo $chat->getMessage();?></div>
+                        <div class="message-time"><?php echo $chat->getDate();?></div>
+                    </div>
+                </div>
+                <?php
+            } else {
             ?>
-        <div class="message-row user-message">
-            <div class="message-content">
-                <img src="https://i.pinimg.com/236x/21/87/a8/2187a85893e81c2f964f1c89ef559c4e.jpg" width="64px" alt="User Picture"/>
-                <div class="user-name">Hentu</div>
-                <div class="message-text"><?php echo $chat->getMessage();?></div>
-                <div class="message-time"><?php echo $chat->getDate();?></div>
+            <div class="message-row other-message">
+                <div class="message-content">
+                    <img src="https://i.pinimg.com/236x/21/87/a8/2187a85893e81c2f964f1c89ef559c4e.jpg" width="64px" alt="User Picture"/>
+                    <div class="user-name"><?php echo $chat->getLogin();?></div>
+                    <div class="message-text"><?php echo $chat->getMessage();?></div>
+                    <div class="message-time"><?php echo $chat->getDate();?></div>
+                </div>
             </div>
-        </div>
-        <?php
+            <?php
+                }
         }
-        ?>
-        <div class="message-row user-message">
-            <div class="message-content">
-                <img src="https://i.pinimg.com/236x/21/87/a8/2187a85893e81c2f964f1c89ef559c4e.jpg" width="64px" alt="User Picture"/>
-                <div class="user-name">Hentu</div>
-                <div class="message-text">LOL</div>
-                <div class="message-time">16.04</div>
-            </div>
-        </div>
-        <div class="message-row other-message">
-            <div class="message-content">
-                <img src="https://i.pinimg.com/236x/21/87/a8/2187a85893e81c2f964f1c89ef559c4e.jpg" width="64px" alt="User Picture"/>
-                <div class="user-name">WieluHentu</div>
-                <div class="message-text">Ok then</div>
-                <div class="message-time">16.04</div>
-            </div>
-        </div>
+            ?>
     </div>
 
     <div id="chat-form">
@@ -58,4 +55,13 @@ include 'topMenu.php';
             <input type="submit" class="submit" name="action">
         </form>
     </div>
+</div>
+<div id="error">
+    <?php
+    if(!empty($_SESSION['emptyMessage']))
+        echo"<p>".$_SESSION['emptyMessage']."</p>";
+
+    if(!empty($_SESSION['emptyUserID']))
+        echo"<p>".$_SESSION['emptyUserID']."</p>";
+    ?>
 </div>
