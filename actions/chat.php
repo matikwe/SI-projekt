@@ -2,7 +2,8 @@
 include 'Database.php';
 include 'ChatClass.php';
 
-$_SESSION ['message'] = "";
+$_SESSION ['emptyMessage'] = "";
+$_SESSION ['emptyUserID'] = "";
 $database = new Database("blog");
 
 $query = $database->getHandle()->query('SELECT c.id_wiadomosci, c.user_id, u.login, c.tresc, c.data FROM czat c INNER JOIN user u ON u.user_id = c.user_id');
