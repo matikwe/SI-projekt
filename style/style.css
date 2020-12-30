@@ -57,6 +57,7 @@ main .test input:focus {
 
 main .test2 input:focus {
     border: 1px solid var(--orange);
+    background: #222222;
     outline: none;
 }
 

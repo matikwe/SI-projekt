@@ -4,7 +4,7 @@
     <title>Kontakt panel</title>
     <link rel="stylesheet" href="./style/contactPanel.css">
     <link rel="stylesheet" href="./style/fontello.css">
-
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
 
@@ -29,4 +29,3 @@ include 'topMenu.php';
                     ?>
             </table>
     </div>
-
