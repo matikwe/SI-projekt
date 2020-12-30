@@ -10,14 +10,11 @@ include 'topMenu.php';
 ?>
 
 <h1>Kontakt</h1>
-
-</div>
-<div class="mail">
-    <div class="form">
-    <form action="index.php?action=contact" method="post">
-        <input type="text" placeholder="Imię" id="name" name="name" value="<?php if(!empty($_POST['name'])) echo $_POST['name']; ?>"><br><br>
-        <input type="text" placeholder="Nazwisko" id="surname" name="surname" value="<?php if(!empty($_POST['surname'])) echo $_POST['surname']; ?>"><br><br>
-        <input type="text" placeholder="Mail" id="mail" name="mail" value="<?php if(!empty($_POST['mail'])) echo $_POST['mail']; ?>"><br><br>
+<main>
+    <form action="index.php?action=contact" class="test2" method="post">
+        <input type="text" placeholder="Imię" id="name" name="name" value="<?php if(!empty($_POST['name'])) echo $_POST['name']; ?>">
+        <input type="text" placeholder="Nazwisko" id="surname" name="surname" value="<?php if(!empty($_POST['surname'])) echo $_POST['surname']; ?>">
+        <input type="text" placeholder="Mail" id="mail" name="mail" value="<?php if(!empty($_POST['mail'])) echo $_POST['mail']; ?>">
         <textarea name="info"><?php if(!empty($_POST['info'])) echo $_POST['info']; ?></textarea>
         <div id="error">
             <?php
@@ -31,8 +28,6 @@ include 'topMenu.php';
         </div>
         <input type="submit" class="submit" name="button" value="Wyślij" />
     </form>
-    </div>
-
-</div>
+</main>
 
 </body>
