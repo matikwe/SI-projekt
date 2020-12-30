@@ -42,5 +42,6 @@ include 'topMenu.php';
                 ?>
             </div>
             <input type="submit" value="Zarejestruj" class="submit" name="action">
+        </label>
     </form>
 </main>

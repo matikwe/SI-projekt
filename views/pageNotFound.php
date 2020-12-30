@@ -12,6 +12,6 @@ include 'topMenu.php';
 
 <h1>Podana strona nie istnieje!</h1>
 
-<div class="pageNF">
-    <a href="index.php?action=home">Powrót do strony głównej</a>
-</div>
+<main>
+    <a href="index.php?action=home" class="smallButton">Powrót do strony głównej</a>
+</main>

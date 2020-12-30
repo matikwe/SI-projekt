@@ -65,6 +65,12 @@ main .test2 textarea {
     transition: 0.3s;
 }
 
+main .test2 textarea:focus {
+    border: 1px solid var(--orange);
+    background: #222222;
+    outline: none;
+}
+
 main .test input:focus {
     border: 1px solid rgba(255,255,255,.8);
     outline: none;
@@ -105,7 +111,8 @@ main .test input.submit:hover {
 }
 
 main .test2 input.submit:hover {
-    background-color: #111111;
+    background-color: #222222;
+    cursor: pointer;
 }
 
 #error {
@@ -373,7 +380,7 @@ h1 {
 }
 
 .smallButton:hover {
-    background-color: #111111;
+    background-color: #222222;
 }
 
 .pageNF {
@@ -395,7 +402,7 @@ h1 {
 }
 
 .pageNF a:hover {
-    background-color: #111111;
+    background-color: #222222;
 }
 
 .mail {

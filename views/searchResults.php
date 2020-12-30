@@ -14,6 +14,6 @@ include 'topMenu.php';
 echo '<h1>Wyniki wyszukiwania dla: <i>'.$searchField.'</i></h1>';
 ?>
 
-<div class="pageNF">
+<main>
 
-</div>
+</main>
