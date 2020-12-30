@@ -45,11 +45,10 @@ include 'topMenu.php';
         }
             ?>
     </div>
-
     <div id="chat-form">
         <form action="index.php?action=chat" method="POST">
             <input type="text" placeholder="Wprowadź wiadomość" name="message">
-            <input type="submit" class="submit" name="action">
+            <input type="submit" class="submit" name="action" value="">
         </form>
     </div>
 </div>

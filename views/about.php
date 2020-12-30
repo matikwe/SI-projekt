@@ -15,7 +15,12 @@ include 'topMenu.php';
 
 <div class="container">
 
+
+
     <div class="content">
+
+        <a href="index.php?action=contactPanel" class="smallButton">Kontakt panel</a>
+
         <?php
         for ($i = 0; $i < $_SESSION['countUserDisplay']; $i++) {
             $user = unserialize($_SESSION['userDisplay'][$i]);

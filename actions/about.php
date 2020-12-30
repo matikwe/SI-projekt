@@ -8,7 +8,6 @@ $data = new Database('blog');
 $query = $data->getHandle()->query('SELECT * FROM user WHERE role IN("admin","redaktor")');
 
 
-
 /*foreach($query as $row) {
     $user[$row] = new user($row[user_id], $row['login']);
 }*/
@@ -21,7 +20,7 @@ for ($i = 0; $row = $query->fetch(); $i++){
 
 //pobranie userów z bazy
 $i = 0;
-foreach ($query as $item){
+foreach ($query as $item) {
     $user = new User($item['user_id'], $item['login'], $item['password'], $item['email'], $item['role'], $item['opis']);
     $_SESSION['userDisplay'][$i] = serialize($user);
     $i++;
