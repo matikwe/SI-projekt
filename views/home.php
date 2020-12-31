@@ -13,7 +13,16 @@ include 'topMenu.php';
 
 <h1>Strona główna</h1>
 
-<main style="height: 1200px;">
+<main style="height: 1600px;">
+    <div class="newArticles hints">
+        <h2 class="hints"><i class="icon-lightbulb hints"></i>Ciekawostki</h2>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </div>
     <div class="newArticles highlighted">
         <h2 class="highlighted"><i class="icon-star highlighted"></i>Wyróżnione artykuły</h2>
         <article>

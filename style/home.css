@@ -27,3 +27,9 @@
     color: lightgreen;
     border-color: lightgreen;
 }
+
+.hints {
+    color: lightyellow;
+    border-color: lightyellow;
+    /*text-align: justify;*/
+}
