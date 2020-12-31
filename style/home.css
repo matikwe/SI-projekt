@@ -1,9 +1,9 @@
 .newArticles {
     /*background-color: #55FFFF;*/
-    border: 3px orange dotted;
+    border: 3px orange dashed;
     margin: 100px auto;
     width: 50%;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 10px;
 }
 
@@ -11,4 +11,19 @@
     /*background-color: #333300;*/
     width: 200px;
     height: 200px;
+}
+
+.highlighted {
+    color: pink;
+    border-color: pink;
+}
+
+.new {
+    color: lightblue;
+    border-color: lightblue;
+}
+
+.newUsers {
+    color: lightgreen;
+    border-color: lightgreen;
 }

@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e37f593-768a-47bd-8d29-c5ab5073ef6e" name="Default Changelist" comment="KK">
-      <change afterPath="$PROJECT_DIR$/style/home.css" afterDir="false" />
+    <list default="true" id="8e37f593-768a-47bd-8d29-c5ab5073ef6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/contactPanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/contactPanel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/font/fontello.eot" beforeDir="false" afterPath="$PROJECT_DIR$/font/fontello.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/fontello.svg" beforeDir="false" afterPath="$PROJECT_DIR$/font/fontello.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/font/fontello.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/font/fontello.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/font/fontello.woff" beforeDir="false" afterPath="$PROJECT_DIR$/font/fontello.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/font/fontello.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/font/fontello.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/contactPanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/contactPanel.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/fontello.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/fontello.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/contactPanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/contactPanel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +94,7 @@
       <workItem from="1609292037300" duration="2732000" />
       <workItem from="1609323413223" duration="2225000" />
       <workItem from="1609331850129" duration="8340000" />
-      <workItem from="1609372223646" duration="2373000" />
+      <workItem from="1609372223646" duration="3847000" />
     </task>
     <task id="LOCAL-00001" summary="Mam rozmieszczenie, ale wszystko mi się jeszcze rozjeżdża, próbuję robić dalej">
       <created>1607207122888</created>
@@ -248,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609339118183</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="KK">
+      <created>1609375946994</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1609375946994</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -16,6 +16,22 @@ body {
     background-blend-mode: darken;
 }
 
+h1 {
+    text-align: center;
+    color: var(--orange);
+    margin: 10px;
+    font-size: 65px;
+    text-shadow: 2px 2px black;
+}
+
+h2 {
+    /*background-color: yellow;*/
+    text-align: center;
+    color: darkorange;
+    font-size: 40px;
+    margin: 2px;
+}
+
 main {
     text-align: center;
     height: calc(100% - 176px - 85px)
@@ -299,22 +315,6 @@ option a {
 .container {
     width: 100%;
     min-height: 100%;
-}
-
-h1 {
-    text-align: center;
-    color: var(--orange);
-    margin: 10px;
-    font-size: 65px;
-    text-shadow: 2px 2px black;
-}
-
-h2 {
-    /*background-color: yellow;*/
-    text-align: center;
-    color: purple;
-    font-size: 40px;
-    margin: 2px;
 }
 
 .content {

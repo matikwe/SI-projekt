@@ -13,31 +13,41 @@ include 'topMenu.php';
 
 <h1>Strona główna</h1>
 
-<main>
-    <div class="newArticles">
-        <h2>Wyróżnione artykuły</h2>
+<main style="height: 1200px;">
+    <div class="newArticles highlighted">
+        <h2 class="highlighted"><i class="icon-star highlighted"></i>Wyróżnione artykuły</h2>
         <article>
-            <h3>Nagłówek</h3>
+            <h3>Artykuł 1</h3>
         </article>
         <article>
-            <h3>Nagłówek</h3>
+            <h3>Artykuł 2</h3>
         </article>
         <article>
-            <h3>Nagłówek</h3>
+            <h3>Artykuł 3</h3>
         </article>
     </div>
-    <div class="newArticles">
-        <h2><i class="icon-star"></i>Nowe artykuły</h2>
+    <div class="newArticles new">
+        <h2 class="new"><i class="icon-plus new"></i>Nowe artykuły</h2>
         <article>
-            <h3>Nagłówek</h3>
+            <h3>Nowy 1</h3>
         </article>
         <article>
-            <h3>Nagłówek</h3>
+            <h3>Nowy 2</h3>
         </article>
         <article>
-            <h3>Nagłówek</h3>
+            <h3>Nowy 3</h3>
+        </article>
+    </div>
+    <div class="newArticles newUsers">
+        <h2 class="newUsers"><i class="icon-user newUsers"></i>Nowi użytkownicy</h2>
+        <article>
+            <h3>Użytkownik 1</h3>
+        </article>
+        <article>
+            <h3>Użytkownik 2</h3>
+        </article>
+        <article>
+            <h3>Użytkownik 3</h3>
         </article>
     </div>
 </main>
-
-
