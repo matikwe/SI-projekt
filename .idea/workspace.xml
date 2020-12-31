@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e37f593-768a-47bd-8d29-c5ab5073ef6e" name="Default Changelist" comment="KK">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_2020_12_53__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_2020_12_53__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2020_22_15__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2020_22_15__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_12_2020_22_46__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_12_2020_22_46__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/contactPanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/contactPanel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/fontello.eot" beforeDir="false" afterPath="$PROJECT_DIR$/font/fontello.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/fontello.svg" beforeDir="false" afterPath="$PROJECT_DIR$/font/fontello.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/fontello.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/font/fontello.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/fontello.woff" beforeDir="false" afterPath="$PROJECT_DIR$/font/fontello.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/fontello.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/font/fontello.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/contactPanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/contactPanel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/fontello.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/fontello.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/contactPanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/contactPanel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +24,14 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -38,13 +55,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Documents/zampp/htdocs/index.php" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/style" />
       <recent name="$PROJECT_DIR$/font" />
+      <recent name="$PROJECT_DIR$/style" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -79,6 +97,9 @@
       <workItem from="1609182527771" duration="3752000" />
       <workItem from="1609289049019" duration="441000" />
       <workItem from="1609292037300" duration="2732000" />
+      <workItem from="1609323413223" duration="2225000" />
+      <workItem from="1609331850129" duration="8340000" />
+      <workItem from="1609372223646" duration="2373000" />
     </task>
     <task id="LOCAL-00001" summary="Mam rozmieszczenie, ale wszystko mi się jeszcze rozjeżdża, próbuję robić dalej">
       <created>1607207122888</created>
@@ -206,7 +227,28 @@
       <option name="project" value="LOCAL" />
       <updated>1609290342140</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="KK">
+      <created>1609295015904</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1609295015904</updated>
+    </task>
+    <task id="LOCAL-00020" summary="KK">
+      <created>1609325646116</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1609325646117</updated>
+    </task>
+    <task id="LOCAL-00021" summary="KK">
+      <created>1609339118183</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1609339118183</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,9 +269,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Mam rozmieszczenie, ale wszystko mi się jeszcze rozjeżdża, próbuję robić dalej" />
     <MESSAGE value="Ola" />
-    <MESSAGE value="KK" />
     <MESSAGE value="Aaaa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aaaa" />
+    <MESSAGE value="KK" />
+    <option name="LAST_COMMIT_MESSAGE" value="KK" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

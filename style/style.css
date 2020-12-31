@@ -186,6 +186,9 @@ nav {
 
 .search form input {
     border-radius: 15px;
+    color: black;
+    background-color: #222222;
+    border-color: orange;
 }
 
 .ad1 {
@@ -304,6 +307,14 @@ h1 {
     margin: 10px;
     font-size: 65px;
     text-shadow: 2px 2px black;
+}
+
+h2 {
+    /*background-color: yellow;*/
+    text-align: center;
+    color: purple;
+    font-size: 40px;
+    margin: 2px;
 }
 
 .content {

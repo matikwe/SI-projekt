@@ -2,6 +2,7 @@
 <head>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/fontello.css">
+    <link rel="stylesheet" href="./style/home.css">
     <title>Strona główna</title>
 </head>
 <body>
@@ -12,36 +13,31 @@ include 'topMenu.php';
 
 <h1>Strona główna</h1>
 
-<div class="home">
-    <div class="ad1">
-        Reklama
+<main>
+    <div class="newArticles">
+        <h2>Wyróżnione artykuły</h2>
+        <article>
+            <h3>Nagłówek</h3>
+        </article>
+        <article>
+            <h3>Nagłówek</h3>
+        </article>
+        <article>
+            <h3>Nagłówek</h3>
+        </article>
     </div>
-    <!--
-
-    <div class="articles">
-        <div class="article">A1</div>
-        <div class="article">A2</div>
-        <div class="article">A3</div>
-        <div class="article">A4</div>
-        <div class="article">A5</div>
-        <div class="article">A6</div>
-        <div class="numbering">
-            PAGE
-        </div>
+    <div class="newArticles">
+        <h2><i class="icon-star"></i>Nowe artykuły</h2>
+        <article>
+            <h3>Nagłówek</h3>
+        </article>
+        <article>
+            <h3>Nagłówek</h3>
+        </article>
+        <article>
+            <h3>Nagłówek</h3>
+        </article>
     </div>
-    <div class="ad2">
-        <div class="user">
-            użytkownik
-        </div>
-        <div class="ad">
-            REKLAMA
-        </div>
-        <div class="widgets">
-            widzety
-        </div>
-    </div>
-    -->
-</div>
-
+</main>
 
 

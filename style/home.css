@@ -1,0 +1,14 @@
+.newArticles {
+    /*background-color: #55FFFF;*/
+    border: 3px orange dotted;
+    margin: 100px auto;
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.newArticles article {
+    /*background-color: #333300;*/
+    width: 200px;
+    height: 200px;
+}
