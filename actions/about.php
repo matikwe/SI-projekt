@@ -21,7 +21,7 @@ for ($i = 0; $row = $query->fetch(); $i++){
 //pobranie userów z bazy
 $i = 0;
 foreach ($query as $item) {
-    $user = new User($item['user_id'], $item['login'], $item['password'], $item['email'], $item['role'], $item['opis']);
+    $user = new User($item['user_id'], $item['login'], $item['password'], $item['email'], $item['role'], $item['opis'], $item['zdjęcie_profilowe']);
     $_SESSION['userDisplay'][$i] = serialize($user);
     $i++;
 }

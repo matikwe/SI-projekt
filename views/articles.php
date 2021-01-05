@@ -17,7 +17,8 @@ include 'topMenu.php';
 
         if(empty($_GET['name'])){
             $i = $_SESSION['countArticles'] - 1;
-            echo '<a href="index.php?action=articles&name=acceptArticle" class="smallButton">Dodane artykuły</a>';
+            if($_SESSION['currentRole'] == 'admin' || $_SESSION['currentRole'] == 'redaktor' )
+                echo '<a href="index.php?action=articles&name=acceptArticle" class="smallButton">Dodane artykuły</a>';
         }else if($_GET['name']=='acceptArticle'){
             $i = $_SESSION['countArticlesNotAccepted'] - 1;
             echo '<a href="index.php?action=articles" class="smallButton">Powrót do dodanych</a>';
@@ -36,9 +37,9 @@ include 'topMenu.php';
                 <p><img src="<?php echo $article->getImg(); ?>"/>
                     <?php echo substr($article->getContents(), 0, 500) . '...'; ?></p>
                 <?php
-                if(empty($_GET['name'])) ?>
-                    <h4><a href="index.php?action=articles&name=currentPost&postID=<?php echo $article->getIdArticle() ?>&number=<?php echo $i ?>">Czytaj więcej</a></h4>
-
+                if(empty($_GET['name'])) {
+                    echo '<h4><a href="index.php?action=articles&name=currentPost&postID='.$article->getIdArticle().'&number='.$i.'">Czytaj więcej</a></h4>';
+                }?>
 
                 <h5>Autor: <?php echo $article->getAuthor(); ?></h5>
                 <?php

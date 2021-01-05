@@ -27,7 +27,14 @@ include 'topMenu.php';
             ?>
             <div class="user">
                 <div class="icon">
-                    <img src="./userprofile.jpg" alt="User Profile">
+                    <img src="
+                    <?php
+                        if(empty($user->getProfilePicture()))
+                            echo'./userprofile.jpg';
+                        else
+                            echo $user->getProfilePicture();
+                        ?>
+                    " alt="User Profile">
                 </div>
                 <div class="text">
                     <?php

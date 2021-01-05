@@ -2,6 +2,9 @@
 include 'Database.php';
 include "Article.php";
 
+if(empty($_SESSION['currentRole']))
+    $_SESSION['currentRole'] = 'bezLogowania';
+
 $database = new Database('blog');
 if(empty($_GET['name'])) {
     $query = $database->getHandle()->query('SELECT * FROM artykul');

@@ -9,6 +9,8 @@ class User {
     private $email;
     private $role;
     private $description;
+    private $profilePicture;
+
 
     /**
      * User constructor.
@@ -19,7 +21,7 @@ class User {
      * @param $role
      * @param $description
      */
-    public function __construct($user_id, $login, $password, $email, $role, $description)
+    public function __construct($user_id, $login, $password, $email, $role, $description, $profilePicture)
     {
         $this->user_id = $user_id;
         $this->login = $login;
@@ -27,6 +29,23 @@ class User {
         $this->email = $email;
         $this->role = $role;
         $this->description = $description;
+        $this->profilePicture = $profilePicture;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProfilePicture()
+    {
+        return $this->profilePicture;
+    }
+
+    /**
+     * @param mixed $profilePicture
+     */
+    public function setProfilePicture($profilePicture)
+    {
+        $this->profilePicture = $profilePicture;
     }
 
     /**
