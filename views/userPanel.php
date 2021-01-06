@@ -15,13 +15,13 @@ include 'topMenu.php';
 
 <div class="pageNF">
     <?php if($_SESSION['currentRole'] == 'admin') {
-    echo '<a href="index.php?action=contactPanel">Kontakt panel</a>';
+    echo '<a href="index.php?action=contactPanel">Otrzymane wiadomości</a>';
     echo '<a href="index.php?action=userList">Modyfikacja danych użytkownika</a>';
-    echo '<a href="index.php?action=addPost">Dodaj post</a>';
+    echo '<a href="index.php?action=addPost">Dodanie artykułu</a>';
     }
     else {
 
     }
-    echo '<a href = "index.php?action=logout" > Wyloguj</a >';
+    echo '<a href = "index.php?action=logout">Wyloguj</a>';
     ?>
 </div>

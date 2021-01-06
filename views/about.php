@@ -19,7 +19,7 @@ include 'topMenu.php';
 
     <div class="content">
 
-        <a href="index.php?action=contact" class="smallButton">Kontakt panel</a>
+        <a href="index.php?action=contact" class="smallButton">Skontaktuj się z nami!</a>
 
         <?php
         for ($i = 0; $i < $_SESSION['countUserDisplay']; $i++) {

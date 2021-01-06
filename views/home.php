@@ -15,7 +15,7 @@ include 'topMenu.php';
 
 <main style="height: 1600px;">
     <div class="newArticles hints">
-        <h2 class="hints"><i class="icon-lightbulb hints"></i>Ciekawostka</h2>
+        <h2 class="hints"><i class="icon-lightbulb hints"></i>Czy wiesz, że...</h2>
         <?php
             foreach($query as $row) {
                 echo $row['treść'];
