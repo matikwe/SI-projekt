@@ -11,7 +11,7 @@ include 'topMenu.php';
 <h1>Artykuły</h1>
 
 <?php
-    $_SESSION['jump'] = 2; //co ile zmiana strony
+    $_SESSION['jump'] = 4; //co ile zmiana strony
 
     if (empty($_GET['name']) || $_GET['name']=='acceptArticle')
     {
@@ -60,39 +60,43 @@ include 'topMenu.php';
                 if(!empty($_GET['name'])){
                     if(($_GET['name'] == 'acceptArticle')&&($_SESSION['currentRole'] == 'admin' || $_SESSION['currentRole'] == 'redaktor')){
                         echo '<a href="index.php?action=articles&name=acceptDB&postID='.$article->getIdArticle().'" class="smallButton">Akceptuj</a>';
+                        echo '<a href="index.php?action=editPost&id=' . $article->getIdArticle() . '"><button type="button" class="edit"><span class="pencilart">e</span></button></a>';
                 }
                 }else if(($_SESSION['currentRole'] == 'admin' || $_SESSION['currentRole'] == 'redaktor')){
                         echo '<a href="index.php?action=articles&name=deleteDB&postID='.$article->getIdArticle().'" class="smallButton">Usuń z głównej</a>';
+                        echo '<a href="index.php?action=editPost&id=' . $article->getIdArticle() . '"><button type="button" class="edit"><span class="pencilart">e</span></button></a>';
                 }
             echo '</article>';
+
         }
-        echo '</div>';
+        //echo '</div>';
         ?>
 
-        <ul class="pagination">
+            <ul class="pagination">
 
-            <?php
-            if(empty($_GET['name'])){
-                    $nameGet = '';
-                }else{
-                    $nameGet = '&name=acceptArticle';
+                <?php
+                if(empty($_GET['name'])){
+                        $nameGet = '';
+                    }else{
+                        $nameGet = '&name=acceptArticle';
+                    }
+
+                echo '<li><a href="index.php?action=articles'.$nameGet.'&page=0"">«</a></li>';
+
+                for($i = 0; $i <= $_SESSION['count']-1; $i++) {
+
+                    if($_GET['page'] == $i){
+                        echo '<li><a class="active" href="index.php?action=articles'.$nameGet.'&page=' . $i . '">' . ($i+1) . '</a></li>';
+                    }else{
+                        echo '<li><a href="index.php?action=articles'.$nameGet.'&page=' . $i . '">' . ($i+1) . '</a></li>';
+                    }
                 }
 
-            echo '<li><a href="index.php?action=articles'.$nameGet.'&page=0"">«</a></li>';
+                echo '<li><a href="index.php?action=articles'.$nameGet.'&page=' .($_SESSION['count']-1).'"">»</a></li>';
+                ?>
 
-            for($i = 0; $i <= $_SESSION['count']-1; $i++) {
-
-                if($_GET['page'] == $i){
-                    echo '<li><a class="active" href="index.php?action=articles'.$nameGet.'&page=' . $i . '">' . ($i+1) . '</a></li>';
-                }else{
-                    echo '<li><a href="index.php?action=articles'.$nameGet.'&page=' . $i . '">' . ($i+1) . '</a></li>';
-                }
-            }
-
-            echo '<li><a href="index.php?action=articles'.$nameGet.'&page=' .($_SESSION['count']-1).'"">»</a></li>';
-            ?>
-
-        </ul>
+            </ul>
+        </article>
     <?php
     }else if($_GET['name'] == 'currentPost')
     {
