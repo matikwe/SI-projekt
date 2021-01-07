@@ -5,7 +5,7 @@
     <div class="menu">
 
         <a href="index.php?action=home" class="option">STRONA GŁÓWNA</a>
-        <a href="index.php?action=articles"><div class="option">ARTYKUŁY</div></a>
+        <a href="index.php?action=articles&page=0"><div class="option">ARTYKUŁY</div></a>
         <a href="index.php?action=chat"><div class="option">CZAT</div></a>
         <?php
         if(empty($_SESSION['currentLogin']))

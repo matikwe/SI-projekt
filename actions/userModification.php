@@ -11,7 +11,7 @@ if(!empty($_GET['name'])) {
     $database = new Database('blog');
     if ($_GET['name'] == "delete") {
         $id = $_GET['id'];
-        $delete = $database->getHandle()->query('DELETE FROM user WHERE user_id = '.$id);
+        $delete = $database->getHandle()->query('DELETE FROM user WHERE user_id='.$id);
         $count = $database->count('user');
         for ($i = $_GET['id']; $i <= $count; $i++) {
             $update = $database->getHandle()->query('UPDATE user SET user_id="' . $i . '" WHERE user_id="' . ($i + 1) . '"');

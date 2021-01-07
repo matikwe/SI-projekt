@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e37f593-768a-47bd-8d29-c5ab5073ef6e" name="Default Changelist" comment="KK">
+    <list default="true" id="8e37f593-768a-47bd-8d29-c5ab5073ef6e" name="Default Changelist" comment="ProfileV1">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_2020_12_53__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_2020_12_53__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2020_22_15__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2020_22_15__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_12_2020_22_46__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_12_2020_22_46__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/userModification.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/userModification.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/topMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/articles.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/articles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/userModification.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/userModification.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,14 +19,6 @@
   </component>
   <component name="ComposerSettings">
     <execution />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-        <option value="CSS File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -30,8 +29,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0.0" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1lFAuawQPU1U70dPL1EUZTNnw1p" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -43,7 +46,6 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Documents/zampp/htdocs/index.php" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -85,9 +87,11 @@
       <workItem from="1609182527771" duration="3752000" />
       <workItem from="1609289049019" duration="441000" />
       <workItem from="1609292037300" duration="2732000" />
-      <workItem from="1609323413223" duration="2225000" />
-      <workItem from="1609331850129" duration="8340000" />
-      <workItem from="1609372223646" duration="5807000" />
+      <workItem from="1609879312822" duration="67000" />
+      <workItem from="1609879423604" duration="330000" />
+      <workItem from="1609882437227" duration="2674000" />
+      <workItem from="1609928580057" duration="3250000" />
+      <workItem from="1610018161364" duration="6099000" />
     </task>
     <task id="LOCAL-00001" summary="Mam rozmieszczenie, ale wszystko mi się jeszcze rozjeżdża, próbuję robić dalej">
       <created>1607207122888</created>
@@ -215,56 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609290342140</updated>
     </task>
-    <task id="LOCAL-00019" summary="KK">
-      <created>1609295015904</created>
+    <task id="LOCAL-00019" summary="ProfileV1">
+      <created>1609879361849</created>
       <option name="number" value="00019" />
       <option name="presentableId" value="LOCAL-00019" />
       <option name="project" value="LOCAL" />
-      <updated>1609295015904</updated>
+      <updated>1609879361849</updated>
     </task>
-    <task id="LOCAL-00020" summary="KK">
-      <created>1609325646116</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1609325646117</updated>
-    </task>
-    <task id="LOCAL-00021" summary="KK">
-      <created>1609339118183</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1609339118183</updated>
-    </task>
-    <task id="LOCAL-00022" summary="KK">
-      <created>1609375946994</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1609375946994</updated>
-    </task>
-    <task id="LOCAL-00023" summary="KK">
-      <created>1609377419530</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1609377419530</updated>
-    </task>
-    <task id="LOCAL-00024" summary="KK">
-      <created>1609379965006</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1609379965006</updated>
-    </task>
-    <task id="LOCAL-00025" summary="KK">
-      <created>1609380768782</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1609380768782</updated>
-    </task>
-    <option name="localTasksCounter" value="26" />
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,9 +247,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Mam rozmieszczenie, ale wszystko mi się jeszcze rozjeżdża, próbuję robić dalej" />
     <MESSAGE value="Ola" />
-    <MESSAGE value="Aaaa" />
     <MESSAGE value="KK" />
-    <option name="LAST_COMMIT_MESSAGE" value="KK" />
+    <MESSAGE value="Aaaa" />
+    <MESSAGE value="ProfileV1" />
+    <option name="LAST_COMMIT_MESSAGE" value="ProfileV1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

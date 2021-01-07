@@ -40,7 +40,7 @@ include "topMenu.php";
         </label>
     </form>
 </main>
-
+<!--
 <div class="custom-select" style="width: 200px;">
     <select>
         <option value="0">Select car:</option>
@@ -130,3 +130,4 @@ include "topMenu.php";
     then close all select boxes:*/
     document.addEventListener("click", closeAllSelect);
 </script>
+-->
