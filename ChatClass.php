@@ -8,13 +8,31 @@ class ChatClass
     private $login;
     private $message;
     private $date;
+    private $img;
 
-    public function __construct($id_message, $user_id, $login, $message, $date){
+    public function __construct($id_message, $user_id, $login, $message, $date, $img){
         $this->id_message = $id_message;
         $this->user_id = $user_id;
         $this->login = $login;
         $this->message = $message;
         $this->date = $date;
+        $this->img = $img;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getImg()
+    {
+        return $this->img;
+    }
+
+    /**
+     * @param mixed $img
+     */
+    public function setImg($img)
+    {
+        $this->img = $img;
     }
 
     public function getIdMessage()

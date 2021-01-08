@@ -6,11 +6,11 @@ $_SESSION ['emptyMessage'] = "";
 $_SESSION ['emptyUserID'] = "";
 $database = new Database("blog");
 
-$query = $database->getHandle()->query('SELECT c.id_wiadomosci, c.user_id, u.login, c.tresc, c.data FROM czat c INNER JOIN user u ON u.user_id = c.user_id');
+$query = $database->getHandle()->query('SELECT c.id_wiadomosci, c.user_id, u.login, c.tresc, c.data, u.zdjęcie_profilowe FROM czat c INNER JOIN user u ON u.user_id = c.user_id');
 
 $i = 0;
 foreach ($query as $item) {
-    $chat = new ChatClass($item['id_wiadomosci'], $item['user_id'], $item['login'], $item['tresc'], $item['data']);
+    $chat = new ChatClass($item['id_wiadomosci'], $item['user_id'], $item['login'], $item['tresc'], $item['data'], $item['zdjęcie_profilowe']);
     $_SESSION['messagesDisplay'][$i] = serialize($chat);
     $i++;
 }

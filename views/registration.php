@@ -20,6 +20,7 @@ include 'topMenu.php';
             <input type="password" placeholder="Powtórz hasło" name="passwordB">
             <input type="text" placeholder="Wpisz mail" name="mailA" value="<?php if(!empty($_POST['mailA'])) echo $_POST['mailA']; ?>">
             <input type="text" placeholder="Powtórz mail" name="mailB" value="<?php if(!empty($_POST['mailB'])) echo $_POST['mailB']; ?>">
+            <input type="text" placeholder="Wpisz link do zdjęcia awatara (niewymagane)" name="url" value="<?php if(!empty($_POST['url'])) echo $_POST['url']; ?>">
             <div id="error">
                 <?php
                     if(!empty($_SESSION['emptyRegistration']))
@@ -39,7 +40,11 @@ include 'topMenu.php';
 
                     if(!empty($_SESSION['eLoginDB']))
                         echo"<p>".$_SESSION['eLoginDB']."</p>";
-                ?>
+
+                    if (!empty($_SESSION['errorExtension'])) {
+                        echo "<p>".$_SESSION['errorExtension']."</p>";
+                    }
+                    ?>
             </div>
             <input type="submit" value="Zarejestruj" class="submit" name="action">
         </label>

@@ -7,6 +7,7 @@ $_SESSION['eMail'] = "";
 $_SESSION['eFormatMail'] = "";
 $_SESSION['eMailDB'] = "";
 $_SESSION['eLoginDB'] = "";
+$_SESSION['errorExtension'] = "";
 
 if(isset($_POST['action'])) {
     $login = $_POST['login'];
@@ -38,6 +39,16 @@ if(isset($_POST['action'])) {
             $_SESSION['eFormatMail'] = "Zły format maila";
             $correct = false;
         }
+        if(!empty($_POST['url'])){
+
+            $extension = substr($_POST['url'],strlen($_POST['url'])-3,3);
+            if($extension == "gif" || $extension == "jpg" || $extension == "png"){
+
+            }else{
+                $_SESSION['errorExtension'] = "Wklej linka z rozszerzeniem jpg, gif lub png";
+                $correct = false;
+            }
+        }
         //poprawne dane
         if($correct == true){
 
@@ -47,6 +58,13 @@ if(isset($_POST['action'])) {
             $database = new Database("blog");
             $count = $database->count('user') + 1;
             $role = "user";
+
+            if(empty($_POST['url'])){
+                $url = "";
+            }else{
+                $url = $_POST['url'];
+            }
+
             $addDB = true;
 
             $sameMail = $database->getHandle()->query('SELECT count(user_id) FROM user WHERE email = "'.$mailA.'"');
@@ -62,7 +80,8 @@ if(isset($_POST['action'])) {
             }
 
             if($addDB == true) {
-                $addUser = $database->getHandle()->query('INSERT INTO user(user_id, login, password, email, role) VALUES ("' . $count . '","' . $login . '","' . $passHash . '","' . $mailA . '","' . $role . '")');
+
+                $addUser = $database->getHandle()->query('INSERT INTO user(user_id, login, password, email, role, zdjęcie_profilowe) VALUES ("' . $count . '","' . $login . '","' . $passHash . '","' . $mailA . '","' . $role . '", "'.$url.'")');
                 header("Location: index.php?action=login");
             }
         }
