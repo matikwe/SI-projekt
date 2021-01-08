@@ -17,11 +17,12 @@ include 'topMenu.php';
     <?php if($_SESSION['currentRole'] == 'admin') {
     echo '<a href="index.php?action=contactPanel">Otrzymane wiadomości</a>';
     echo '<a href="index.php?action=userList">Modyfikacja danych użytkownika</a>';
-    echo '<a href="index.php?action=addPost">Dodanie artykułu</a>';
     }
-    else {
 
+    if($_SESSION['currentRole'] != 'admin'){
+        echo '<a href="index.php?action=editCurrentUser">Modyfikacja danych użytkownika</a>';
     }
+    echo '<a href="index.php?action=addPost">Dodanie artykułu</a>';
     echo '<a href = "index.php?action=logout">Wyloguj</a>';
     ?>
 </div>

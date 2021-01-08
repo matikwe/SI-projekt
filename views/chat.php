@@ -24,12 +24,14 @@ include 'topMenu.php';
                 <div class="message-row user-message">
                     <div class="message-content">
                         <?php
+
                             if(empty($chat->getImg()))
                             {
                                 echo '<img src="https://i.pinimg.com/236x/21/87/a8/2187a85893e81c2f964f1c89ef559c4e.jpg" width="64px" alt="User Picture"/>';
                             }else{
                                 echo '<img src="'.$chat->getImg().'" width="64px" alt="User Picture"/>';
                             }
+
                         ?>
 
                         <div class="user-name"><?php echo $chat->getLogin();?></div>
@@ -43,12 +45,14 @@ include 'topMenu.php';
             <div class="message-row other-message">
                 <div class="message-content">
                     <?php
+
                     if(empty($chat->getImg()))
                     {
                         echo '<img src="https://i.pinimg.com/236x/21/87/a8/2187a85893e81c2f964f1c89ef559c4e.jpg" width="64px" alt="User Picture"/>';
                     }else{
                         echo '<img src="'.$chat->getImg().'" width="64px" alt="User Picture"/>';
                     }
+
                     ?>
                     <div class="user-name"><?php echo $chat->getLogin();?></div>
                     <div class="message-text"><?php echo $chat->getMessage();?></div>

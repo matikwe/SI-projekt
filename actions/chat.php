@@ -28,7 +28,12 @@ if (isset($_POST['action'])) {
         $_SESSION['emptyUserID'] = "Musisz być zalogowany";
 
     } else {
-        $addMessage = $database->getHandle()->query('INSERT INTO czat(user_id, tresc) VALUES ("' . $_SESSION['currentUserID'] . '","' . $message . '")');
+
+        $messageID = $database->count('czat') + 1;
+        date_default_timezone_set('Europe/Warsaw');
+        $time = date("h:i | d-m-Y",time());
+
+        $addMessage = $database->getHandle()->query('INSERT INTO czat(id_wiadomosci, user_id, tresc, data) VALUES ("' . $messageID . '", "' . $_SESSION['currentUserID'] . '","' . $message . '" ,"' . $time . '")');
         header("Location: index.php?action=chat");
     }
 }
