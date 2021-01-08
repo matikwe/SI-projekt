@@ -53,16 +53,6 @@ include 'topMenu.php';
             <?php
         }
         ?>
-        <div class="user">
-            <div class="icon">
-                <img src="./userprofile.jpg" alt="User Profile">
-            </div>
-            <div class="text">
-                <h1>Kuźmicki Kamil</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non ligula a neque blandit
-                    dignissim. Proin hendrerit et ipsum fringilla porta. Donec vel diam sit amet tellus pulvinar
-                    iaculis.</p>
-            </div>
-        </div>
+
     </div>
 </div>

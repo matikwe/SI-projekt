@@ -386,7 +386,7 @@ option a {
     text-decoration: none;
     text-align: center;
     width: 200px;
-    margin: auto;
+    margin: 10px auto 30px auto;
     color: #FFFFFF;
     background-color: #000000;
     padding: 20px;
@@ -600,7 +600,7 @@ textarea {
     resize: none;
 }
 
-/*--------------*/
+/*-------TESTY-------*/
 
 /* The container must be positioned relative: */
 .custom-select {
@@ -661,12 +661,15 @@ textarea {
 .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
 }
+/*---KONIEC TESTÓW */
+
 /* pagination */
 ul.pagination {
     width: 100%;
-    display: inline-block;
     padding: 20px 0px 20px 0px;
-    margin: 0;
+    margin: 10px auto 30px auto;
+    display: flex;
+    justify-content: center;
 }
 
 ul.pagination li {
