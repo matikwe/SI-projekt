@@ -15,8 +15,6 @@ include 'topMenu.php';
 
 <div class="container">
 
-
-
     <div class="content">
         <?php
         for ($i = 0; $i < $_SESSION['countUserDisplay']; $i++){
@@ -46,10 +44,10 @@ include 'topMenu.php';
                 }
                 ?>
 
-                <h1><?php echo '#'.$user->getUserId().' --> '.'Login: '.$user->getLogin();?>
-                </h1>
-                <p><?php echo 'Mail: '.$user->getEmail();?>
-                </p>
+                <h2><?php echo '#'.$user->getUserId().' --> '.'Login: '.$user->getLogin();?>
+                </h2>
+                <h3><?php echo 'Mail: '.$user->getEmail();?>
+                </h3>
                 <p><?php echo 'Rola: '.$user->getRole();?>
                 </p>
             </div>

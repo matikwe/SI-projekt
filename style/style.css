@@ -326,6 +326,7 @@ option a {
 }
 
 .user {
+    position: relative;
     min-height: 220px;
     margin-bottom: 20px;
     background-image: linear-gradient(170deg, #393f46, #0a0b10);
@@ -352,6 +353,9 @@ option a {
 
 .icon {
     width: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     float: left;
 }
 
@@ -365,8 +369,12 @@ option a {
     }
     .user {
         min-height: 480px;
+        position: static;
     }
     .icon, .icon img {
+        top: auto;
+        position: static;
+        transform: none;
         text-align: center;
     }
     footer {

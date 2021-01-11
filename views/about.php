@@ -44,10 +44,9 @@ include 'topMenu.php';
                         }
                     }
                     ?>
-
-                    <h1><?php echo $user->getLogin(); ?></h1>
+                    <h2><?php echo $user->getLogin(); ?></h2>
                     <p><?php echo "Rola: " . $user->getRole(); ?></p>
-                    <p><?php echo $user->getDescription(); ?></p>
+                    <h3><?php echo $user->getDescription(); ?></h3>
                 </div>
             </div>
             <?php
