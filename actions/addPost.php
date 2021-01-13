@@ -4,6 +4,7 @@ $_SESSION['errorPost'] = "";
 $_SESSION['errorUrl'] = "";
 $_SESSION['errorTitle'] = "";
 $_SESSION['errorExtension'] = "";
+$_SESSION['postSuccessfullyAdded'] = "";
 $validation = true;
 if(isset($_POST['addPost'])){
 
@@ -39,5 +40,6 @@ if(isset($_POST['addPost'])){
         $login = $_SESSION['currentLogin'];
         $query = $database->getHandle()->query('INSERT INTO artykul(id_artykulu, tytul, tresc, autor, zdjecie, akceptacja_admina) VALUES (' . $count . ',"'.$title.'","' . $post . '","' . $login . '","' . $url . '","false")');
         header("Location: index.php?action=userPanel");
+        $_SESSION['postSuccessfullyAdded'] = "Pomyślnie dodano post, czeka na akceptację administratora...";
     }
 }
