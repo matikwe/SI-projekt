@@ -9,15 +9,10 @@
     include "topMenu.php";
     ?>
 
-    <div class="mail">
-        <div class="form">
-        <form action="index.php?action=descriptionModification&id=<?php echo $_GET['id']?>" method="POST">
-            <label>
 
-                <textarea name="description" placeholder="Wpisz treść opisu"></textarea>
-                <input type="submit" value="Modyfikuj opis" class="submit" name="click">
-
-            </label>
-            </form>
-        </div>
-    </div>
+<main>
+    <form action="index.php?action=descriptionModification&id=<?php echo $_GET['id']?>" class="test2" method="POST">
+        <textarea name="description" placeholder="Wpisz treść opisu"></textarea>
+        <input type="submit" value="Modyfikuj opis" class="submit" name="click">
+    </form>
+</main>
