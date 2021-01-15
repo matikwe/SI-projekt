@@ -11,7 +11,7 @@ include 'topMenu.php';
 ?>
 
 <?php
-echo '<h1>Wyniki wyszukiwania dla: <i>'.$searchField.'</i></h1>';
+echo '<h1>Wyniki wyszukiwania dla: <i>'.$_SESSION['searchField'].'</i></h1>';
 ?>
 
 <main>

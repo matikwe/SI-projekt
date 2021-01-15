@@ -13,7 +13,7 @@ include 'topMenu.php';
 <?php
     $_SESSION['jump'] = 4; //co ile zmiana strony
 
-    if (empty($_GET['name']) || $_GET['name']=='acceptArticle')
+    if (empty($_GET['name']) || $_GET['name']=='acceptArticle' || $_GET['name']=='searchArticle')
     {
         echo '<div class="articles">';
         if(empty($_GET['page'])){
@@ -24,9 +24,13 @@ include 'topMenu.php';
             $i = $_SESSION['countArticles'] - 1;
             if($_SESSION['currentRole'] == 'admin' || $_SESSION['currentRole'] == 'redaktor' )
                 echo '<a href="index.php?action=articles&name=acceptArticle" class="smallButton">Dodane artykuły</a>';
-        }else if($_GET['name']=='acceptArticle'){
+        }
+        else if($_GET['name']=='acceptArticle'){
             $i = $_SESSION['countArticlesNotAccepted'] - 1;
             echo '<a href="index.php?action=articles" class="smallButton">Powrót do dodanych</a>';
+        }
+        else if($_GET['name']=='searchArticle'){
+            $i = $_SESSION['articlesSearchCount'] - 1;
         }
 
         $_SESSION['count'] = ceil(($i+1) / $_SESSION['jump']);
@@ -43,6 +47,9 @@ include 'topMenu.php';
             }else if($_GET['name']=='acceptArticle'){
                 $article = unserialize($_SESSION['articlesNotAccepted'][$i]);
             }
+            else if($_GET['name']=='searchArticle'){
+                $article = unserialize($_SESSION['articlesSearch'][$i]);
+            }
 
             ?>
 
@@ -51,7 +58,7 @@ include 'topMenu.php';
                 <p><img src="<?php echo $article->getImg(); ?>"/>
                     <?php echo substr($article->getContents(), 0, 500) . '...'; ?></p>
                 <?php
-                if(empty($_GET['name'])) {
+                if(empty($_GET['name']) || $_GET['name'] == 'searchArticle') {
                     echo '<h4><a href="index.php?action=articles&name=currentPost&postID='.$article->getIdArticle().'&number='.$i.'">Czytaj więcej</a></h4>';
                 }?>
 

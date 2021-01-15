@@ -17,7 +17,6 @@ body {
     background-attachment: fixed;
     background-blend-mode: darken;
 }
-
 h1 {
     text-align: center;
     color: var(--orange);

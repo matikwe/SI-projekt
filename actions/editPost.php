@@ -9,7 +9,9 @@ $_SESSION['errorExtension'] = "";
 
 $database = new Database('blog');
 
-$loadData = $database->getHandle()->query('SELECT * FROM artykul WHERE'.$_GET['id']);
+$id = $_GET['id'];
+
+$loadData = $database->getHandle()->query('SELECT * FROM artykul WHERE id_artykulu = '.$id);
 
 foreach ($loadData as $item){
     $article = new Article($item['id_artykulu'], $item['tytul'], $item['tresc'], $item['autor'], $item['zdjecie'], $item['akceptacja_admina']);
