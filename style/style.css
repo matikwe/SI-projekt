@@ -321,8 +321,8 @@ option a {
 
 .content {
     width: 70%;
-    height: auto;
-    margin-left: 15%;
+
+    margin: 0 auto;
 }
 
 .user {
