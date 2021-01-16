@@ -76,21 +76,21 @@ include 'topMenu.php';
         <article>
             <h3>
                 <?php
-                echo $nU[1]->getLogin();
+                    echo $nU[1]->getLogin();
                 ?>
             </h3>
             <?php
-            echo $nU[1]->getDescription();
+                echo $nU[1]->getDescription();
             ?>
         </article>
         <article>
             <h3>
                 <?php
-                echo $nU[2]->getLogin();
+                    echo $nU[2]->getLogin();
                 ?>
             </h3>
             <?php
-            echo $nU[2]->getDescription();
+                echo $nU[2]->getDescription();
             ?>
         </article>
     </div>
