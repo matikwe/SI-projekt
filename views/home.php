@@ -13,7 +13,7 @@ include 'topMenu.php';
 
 <h1>Strona główna</h1>
 
-<main style="height: 2100px;">
+<main style="height: 1600px;">
     <div class="newArticles hints">
         <h2 class="hints"><i class="icon-lightbulb hints"></i>Czy wiesz, że...</h2>
         <?php
@@ -22,7 +22,7 @@ include 'topMenu.php';
             }
         ?>
     </div>
-    <div class="newArticles highlighted">
+    <!--<div class="newArticles highlighted">
         <h2 class="highlighted"><i class="icon-star highlighted"></i>Wyróżnione artykuły</h2>
         <article>
             <h3>Artykuł 1</h3>
@@ -33,7 +33,7 @@ include 'topMenu.php';
         <article>
             <h3>Artykuł 3</h3>
         </article>
-    </div>
+    </div>-->
     <div class="newArticles new">
         <h2 class="new"><i class="icon-plus new"></i>Nowe artykuły</h2>
         <article>
@@ -95,9 +95,3 @@ include 'topMenu.php';
         </article>
     </div>
 </main>
-<?php
-$index = 0;
-    for($i = 0; $i < 3; $i++) {
-        echo $object[$i]->getTitle();
-    }
-?>
